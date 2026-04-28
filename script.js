@@ -12,19 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 line.style.transform = 'translateY(0)';
                 loadProgress += 33.3;
                 loaderBar.style.width = `${loadProgress}%`;
-            }, index * 200); // Speed up line reveal
+            }, index * 200);
         });
 
         setTimeout(() => {
             preloader.classList.add('hidden');
-            setTimeout(() => preloader.style.display = 'none', 800); // Fully remove after transition
+            setTimeout(() => preloader.style.display = 'none', 800); 
             startHeroAnimations();
-        }, loaderLines.length * 200 + 400); // Reduce total wait time
+        }, loaderLines.length * 200 + 400); 
     };
 
     // 2. HERO ANIMATIONS TRIGGER
     const startHeroAnimations = () => {
-        // Target all reveal elements in the hero to prevent the blank screen issue
+        // Hero Reveal Animations
         const heroReveals = document.querySelectorAll('.hero .reveal, .hero .reveal-up');
         heroReveals.forEach((el, index) => {
             setTimeout(() => {
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         startTyping();
         
-        // Trigger onScroll once to catch any other elements already in the viewport
         setTimeout(onScroll, 100);
     };
 
@@ -154,5 +153,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start loading sequence
     loadSystem();
 
-    console.log('%c SYSTEM ONLINE: ACTIVE ', 'background: #00ff41; color: #0a0a0a; font-weight: bold; padding: 5px;');
 });
