@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayasai Pujari | Software Engineer | AI/ML Developer</title>
+    <meta name="description"
+        content="Portfolio of Jayasai Pujari, a Software Engineer and AI/ML Developer specializing in intelligent systems and scalable applications.">
+    
+    <!-- Performance Optimization: Preconnect to critical origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="terminal-loader">
+                <p class="loader-line">> INITIALIZING SYSTEM...</p>
+                <p class="loader-line">> LOADING MODULES...</p>
+                <p class="loader-line">> ACCESS GRANTED</p>
+                <div class="loader-progress">
+                    <div class="loader-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress-container">
+        <div id="scroll-progress"></div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+
+    <!-- OVERLAYS -->
+    <div class="overlay noise"></div>
+    <div class="overlay scanlines"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">JAYASAI PUJARI</div>
+
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#hero">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#works">WORK</a>
+            </div>
+            <div class="nav-socials">
+                <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile"><svg width="20"
+                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg></a>
+                <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile"><svg
+                        width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
+            </div>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu">
+        <div class="mobile-links">
+            <a href="#hero">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#works">WORK</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-content reveal">
+                <div class="status-badge reveal">
+                    <div class="dot"></div>
+                    AVAILABLE FOR OPPORTUNITIES
+                </div>
+                <h1 class="reveal-up">JAYASAI<br>PUJARI</h1>
+                <p class="specialization reveal-up" style="transition-delay: 0.1s;">
+                    Software Engineer | <span id="typing-text"></span>
+                </p>
+                <ul class="proof-list reveal-up" style="transition-delay: 0.2s;">
+                    <li><span class="check">✔</span> Built ML IDS with high ROC-AUC</li>
+                    <li><span class="check">✔</span> Experience with real-world datasets</li>
+                    <li><span class="check">✔</span> Strong in DSA & system design</li>
+                </ul>
+                <blockquote class="reveal-up" style="transition-delay: 0.3s;">
+                    I build intelligent systems that solve real-world problems — from detecting cyber attacks using AI
+                    to developing scalable full-stack applications.
+                </blockquote>
+                <div class="hero-actions reveal-up" style="transition-delay: 0.4s;">
+                    <a href="#works" class="btn btn-filled btn-glow">View Projects</a>
+                    <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View
+                        Resume</a>
+                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-icon" aria-label="View GitHub Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="active-project-callout reveal-up" style="transition-delay: 0.5s;">
+                    <span class="pulse-icon">⚡</span> Currently building a Real-Time AI Intrusion Detection System
+                </div>
+            </div>
+            <div class="hero-image reveal" style="transition-delay: 0.3s;">
+                <div class="img-container">
+                    <img src="assets/profile.jpg" alt="Jayasai Pujari Professional Portrait" fetchpriority="high">
+                    <div class="work-badge">OPEN TO WORK</div>
+                    <div class="brackets"></div>
+                    <div class="image-meta">LOC: INDIA | STATUS: SEEKING SDE ROLES</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME & MANIFESTO -->
+        <section id="about" class="about-section">
+            <div class="section-label reveal">SYSTEM LOG / ENGINEER PROFILE</div>
+            <div class="about-header reveal">
+                <h2 class="about-title">STATUS: <span class="accent-text">ACTIVE</span> <br>ROLE: SOFTWARE ENGINEER
+                    <span class="accent-text">(AI/ML SYSTEMS)</span>
+                </h2>
+                <div class="geo-meta">
+                    EST. 2005<br>
+                    LOC: ANDHRA PRADESH, IN<br>
+                    TIME: UTC+5:30
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="img-wrapper">
+                        <img src="assets/profile.jpg" alt="Profile Dramatic" loading="lazy">
+                        <div class="id-badge">ID: BR_BACKEND_01</div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <div class="log-label">LOG_01 / MISSION_STATEMENT</div>
+                    <h3>I design and build intelligent systems that operate in real-world conditions.</h3>
+                    <p>Focused on bridging machine learning with backend engineering, I develop scalable solutions where
+                        models are not just trained — but deployed, optimized, and reliable.</p>
+                    <p>From intrusion detection systems to full-stack applications, my work emphasizes performance,
+                        clarity, and real-world impact.</p>
+
+                    <div class="approach-box">
+                        <div class="log-label">CORE APPROACH:</div>
+                        <ul class="approach-list">
+                            <li>→ Solve complex problems with simple, efficient systems</li>
+                            <li>→ Optimize performance at both model and system level</li>
+                            <li>→ Build for scalability, not just functionality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS STACK -->
+        <section id="skills" class="skills-stack-section">
+            <div class="skills-stack-header reveal">
+                <div class="section-label">THE KNOWLEDGE GRAPH</div>
+                <h2>SKILLS STACK</h2>
+            </div>
+
+            <div class="skills-stack-grid">
+                <!-- LANGUAGES -->
+                <div class="skills-col reveal-up">
+                    <div class="col-head">
+                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg></div>
+                        <div>
+                            <h3>LANGUAGES</h3>
+                            <span class="sub-label">THE SYNTAX OF LOGIC</span>
+                        </div>
+                    </div>
+                    <div class="skills-cards-list">
+                        <div class="skill-context-card">
+                            <div class="skill-name">PYTHON</div>
+                            <div class="skill-context">Built ML pipelines and backend systems.</div>
+                        </div>
+                        <div class="skill-context-card">
+                            <div class="skill-name">JAVA</div>
+                            <div class="skill-context">Strong in DSA and backend development.</div>
+                        </div>
+                        <div class="skill-context-card">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-context">Data querying, preprocessing, and optimization.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CORE -->
+                <div class="skills-col reveal-up" style="transition-delay: 0.1s;">
+                    <div class="col-head">
+                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg></div>
+                        <div>
+                            <h3>CORE</h3>
+                            <span class="sub-label">THE FOUNDATION</span>
+                        </div>
+                    </div>
+                    <div class="skills-cards-list">
+                        <div class="skill-context-card tilt-card">
+                            <div class="skill-name">MACHINE LEARNING</div>
+                            <div class="skill-context">Developed and optimized models on real-world datasets (ROC-AUC, accuracy, tuning).</div>
+                        </div>
+                        <div class="skill-context-card tilt-card">
+                            <div class="skill-name">DATA STRUCTURES & ALGORITHMS</div>
+                            <div class="skill-context">Focus on performance, optimization, and clean implementation.</div>
+                        </div>
+                        <div class="skill-context-card tilt-card">
+                            <div class="skill-name">SYSTEM DESIGN</div>
+                            <div class="skill-context">Designing scalable backend architectures and integrating ML systems into production workflows.</div>
+                        </div>
+                        <div class="skill-context-card tilt-card">
+                            <div class="skill-name">FULL-STACK WEB DEVELOPMENT</div>
+                            <div class="skill-context">Building responsive full-stack applications with API integration and real-time support.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TECHNOLOGIES -->
+                <div class="skills-col reveal-up" style="transition-delay: 0.2s;">
+                    <div class="col-head">
+                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg></div>
+                        <div>
+                            <h3>TECHNOLOGIES</h3>
+                            <span class="sub-label">THE TOOL GRID</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="log-label">🤖 ML & DATA</div>
+                        <div class="tech-badge-cloud">
+                            <span class="tech-badge"
+                                title="Used for classification and regression models.">Scikit-learn</span>
+                            <span class="tech-badge" title="Deep learning framework for IDS models.">PyTorch</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">NumPy</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="log-label">🖥️ BACKEND & APIS</div>
+                        <div class="tech-badge-cloud">
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge" title="Java framework for scalable backends.">Spring Boot</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="log-label">🗄️ DATABASES</div>
+                        <div class="tech-badge-cloud">
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <div class="log-label">⚙️ DEVOPS & TOOLS</div>
+                        <div class="tech-badge-cloud">
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge" title="Containerization for reliable deployments.">Docker</span>
+                            <span class="tech-badge"
+                                title="Container orchestration for scaling systems.">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECTED WORKS -->
+        <section id="works">
+            <div class="section-header reveal">
+                <div>
+                    <div class="section-label">Case Studies</div>
+                    <h2 class="section-title">Selected Works</h2>
+                    <p class="section-tagline">Selected projects demonstrating real-world problem solving using AI and
+                        scalable systems.</p>
+                </div>
+                <div class="section-meta">/ 03 PROJECTS TOTAL</div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal-up">
+                    <div class="project-thumb">
+                        <img src="assets/project1.png" alt="Intrusion Detection System" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="overlay-title">VIEW PROJECT</span>
+                            <div class="overlay-actions">
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
+                                    class="overlay-btn">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="featured-tag">⭐ FEATURED</div>
+                    </div>
+                    <span class="project-cat">Cybersecurity / AI</span>
+                    <h3 class="project-title">
+                        INTRUSION DETECTION SYSTEM
+                        <span class="arrow-move">→</span>
+                    </h3>
+                    <p class="project-desc">Built a machine learning system to detect malicious network traffic with
+                        high accuracy and real-world reliability.</p>
+
+                    <div class="project-info-grid">
+                        <div class="info-block">
+                            <div class="log-label">🔧 KEY CONTRIBUTIONS</div>
+                            <ul class="contribution-list">
+                                <li>Trained and compared multiple models (RF, NN, XGBoost)</li>
+                                <li>Handled class imbalance and optimized decision thresholds</li>
+                                <li>Evaluated performance using ROC-AUC and confusion matrix</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <div class="log-label">📊 RESULTS</div>
+                            <div class="metric-badges">
+                                <span class="metric-badge">98.5% ACCURACY</span>
+                                <span class="metric-badge">125K+ RECORDS</span>
+                                <span class="metric-badge">LOW FALSE-POSITIVE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">PyTorch</span>
+                        <span class="tech-pill">Scikit-learn</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="project-thumb">
+                        <img src="assets/project2.png" alt="Cop Connect Project" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="overlay-title">VIEW PROJECT</span>
+                            <div class="overlay-actions">
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
+                                    class="overlay-btn">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="project-cat">Web / AI</span>
+                    <h3 class="project-title">
+                        COP CONNECT
+                        <span class="arrow-move">→</span>
+                    </h3>
+                    <p class="project-desc">Developed a scalable AI-powered web platform for real-time communication and
+                        support.</p>
+
+                    <div class="project-info-grid">
+                        <div class="info-block">
+                            <div class="log-label">🔧 KEY CONTRIBUTIONS</div>
+                            <ul class="contribution-list">
+                                <li>Designed backend architecture using Flask</li>
+                                <li>Integrated Firebase for real-time data handling</li>
+                                <li>Built modular system for scalability and maintainability</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <div class="log-label">📊 HIGHLIGHTS</div>
+                            <div class="metric-badges">
+                                <span class="metric-badge">REAL-TIME SYNC</span>
+                                <span class="metric-badge">SCALABLE DESIGN</span>
+                                <span class="metric-badge">AI INTEGRATED</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Flask</span>
+                        <span class="tech-pill">Firebase</span>
+                    </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="project-thumb">
+                        <img src="assets/project3.png" alt="AI Health Intake System" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="overlay-title">VIEW PROJECT</span>
+                            <div class="overlay-actions">
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
+                                    class="overlay-btn">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="project-cat">AI / Healthcare · Scalable Systems</span>
+                    <h3 class="project-title">
+                        AI HEALTH INTAKE SYSTEM
+                        <span class="arrow-move">→</span>
+                    </h3>
+                    <p class="project-desc">Built an AI-powered health intake system that analyzes user symptoms and
+                        generates real-time condition insights, deployed as a scalable backend service.</p>
+
+                    <div class="project-info-grid">
+                        <div class="info-block">
+                            <div class="log-label">🧠 KEY FEATURES</div>
+                            <ul class="contribution-list">
+                                <li>Interactive intake form with 8+ symptom inputs</li>
+                                <li>Predicts 7+ health conditions using AI inference</li>
+                                <li>Real-time response with visual insights (charts)</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <div class="log-label">🔥 ENGINEERING HIGHLIGHTS</div>
+                            <ul class="contribution-list highlight-list">
+                                <li>Spring Boot backend for robust API handling</li>
+                                <li>Docker containerization & K8s orchestration</li>
+                                <li>Integrated AI API for real-time inference</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-info-grid no-border">
+                        <div class="info-block">
+                            <div class="log-label">📊 HIGHLIGHTS</div>
+                            <div class="metric-badges horizontal">
+                                <span class="metric-badge">REAL-TIME AI</span>
+                                <span class="metric-badge">K8S SCALABLE</span>
+                                <span class="metric-badge">DATA VISUALS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-categorized">
+                        <div class="stack-group">
+                            <span class="stack-label">Frontend:</span> <span class="stack-val">React</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">Backend:</span> <span class="stack-val">Spring Boot</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">AI:</span> <span class="stack-val">OpenAI API</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">DevOps:</span> <span class="stack-val">Docker · Kubernetes</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- STRUCTURAL INTEGRITY CTA -->
+        <section class="cta-section">
+            <div class="cta-grid reveal">
+                <div class="cta-text">
+                    <h2>EXPLORE MY <br>WORK & <br><span class="accent-text">CODE.</span></h2>
+                    <p>Dive into my projects, code, and technical implementations. I focus on building scalable systems
+                        and real-world solutions using AI and backend engineering.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf"
+                        class="btn btn-filled resume-btn btn-glow">DOWNLOAD RESUME</a>
+                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline source-btn">VIEW GITHUB</a>
+                    <div class="cta-socials">
+                        <a href="https://linkedin.com/in/pujarijayasai" target="_blank"
+                            rel="noopener noreferrer">LINKEDIN</a>
+                        <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                    </div>
+                    <div class="cta-contact-info">
+                        <span>📧 pujarijayasai@gmail.com</span>
+                        <span>📱 +91 9381453961</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-brand">
+            JAYASAI PUJARI
+            <p class="footer-tagline">Built with focus on performance, simplicity, and real-world impact.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        </div>
+        <div class="footer-contact">
+            <span>pujarijayasai@gmail.com</span>
+            <span>+91 9381453961</span>
+        </div>
+        <div class="footer-copy">© 2026 JAYASAI PUJARI. ALL SYSTEM LOGS RESERVED.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
