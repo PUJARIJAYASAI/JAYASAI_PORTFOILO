@@ -663,6 +663,69 @@ blockquote {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
 }
 
+.cert-image {
+    width: 100%;
+    height: 180px;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.1);
+    transition: var(--transition-slow);
+}
+
+.cert-card:hover .cert-image img {
+    filter: grayscale(0) contrast(1);
+    transform: scale(1.05);
+}
+
+.cert-zoom-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 255, 65, 0.9);
+    color: var(--bg-color);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100%);
+    transition: var(--transition-fast);
+}
+
+.cert-card:hover .cert-zoom-hint {
+    transform: translateY(0);
+}
+
+.placeholder-img {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.02) 10px,
+        rgba(255, 255, 255, 0.02) 20px
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-icon-large {
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
 .cert-header {
     display: flex;
     justify-content: space-between;
