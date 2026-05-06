@@ -319,7 +319,7 @@
             <div class="certs-grid">
                 <!-- 1. HONEYWELL AI -->
                 <div class="cert-card reveal-up">
-                    <div class="cert-image">
+                    <div class="cert-image clickable-cert">
                         <img src="/assets/Honeywell-artificial-intelligence_page-0001.jpg" alt="Honeywell Artificial Intelligence Certificate" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
                     </div>
@@ -332,13 +332,13 @@
                     </div>
                     <h3 class="cert-title">ARTIFICIAL INTELLIGENCE</h3>
                     <p class="cert-desc">Exploration of AI fundamentals, neural networks, and industrial applications of machine learning at scale.</p>
-                    <a href="/assets/Honeywell-artificial-intelligence_page-0001.jpg" target="_blank" class="cert-verify">VIEW CREDENTIAL [→]</a>
+                    <button class="cert-verify view-trigger">VIEW CREDENTIAL [→]</button>
                 </div>
 
                 <!-- 2. J.P. MORGAN -->
                 <div class="cert-card reveal-up" style="transition-delay: 0.1s;">
-                    <div class="cert-image">
-                        <img src="/assets/J.P. Morgan - Software Engineering Job Simulation.png" alt="J.P. Morgan Software Engineering" loading="lazy">
+                    <div class="cert-image clickable-cert">
+                        <img src="/assets/J.P.%20Morgan%20-%20Software%20Engineering%20Job%20Simulation.png" alt="J.P. Morgan Software Engineering" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
                     </div>
                     <div class="cert-header">
@@ -350,13 +350,13 @@
                     </div>
                     <h3 class="cert-title">SOFTWARE ENGINEERING JOB SIMULATION</h3>
                     <p class="cert-desc">Participated in the Forage J.P. Morgan Software Engineering virtual experience, focusing on financial systems and data visualization.</p>
-                    <a href="/assets/J.P. Morgan - Software Engineering Job Simulation.png" target="_blank" class="cert-verify">VIEW CREDENTIAL [→]</a>
+                    <button class="cert-verify view-trigger">VIEW CREDENTIAL [→]</button>
                 </div>
 
                 <!-- 3. DELOITTE DATA -->
                 <div class="cert-card reveal-up" style="transition-delay: 0.2s;">
-                    <div class="cert-image">
-                        <img src="/assets/Deloitte Australia - Data Analytics Job Simulation.png" alt="Deloitte Data Analytics" loading="lazy">
+                    <div class="cert-image clickable-cert">
+                        <img src="/assets/Deloitte%20Australia%20-%20Data%20Analytics%20Job%20Simulation.png" alt="Deloitte Data Analytics" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
                     </div>
                     <div class="cert-header">
@@ -368,13 +368,13 @@
                     </div>
                     <h3 class="cert-title">DATA ANALYTICS JOB SIMULATION</h3>
                     <p class="cert-desc">Gained practical experience in data analysis, visualization, and strategic insights for real-world client scenarios.</p>
-                    <a href="/assets/Deloitte Australia - Data Analytics Job Simulation.png" target="_blank" class="cert-verify">VIEW CREDENTIAL [→]</a>
+                    <button class="cert-verify view-trigger">VIEW CREDENTIAL [→]</button>
                 </div>
 
                 <!-- 4. DBMS & MS FABRIC -->
                 <div class="cert-card reveal-up" style="transition-delay: 0.3s;">
-                    <div class="cert-image">
-                        <img src="/assets/Database Management Systems (RDBMS) & Microsoft Fabric SQL.jpg" alt="DBMS & Microsoft Fabric SQL" loading="lazy">
+                    <div class="cert-image clickable-cert">
+                        <img src="/assets/Database%20Management%20Systems%20(RDBMS)%20&%20Microsoft%20Fabric%20SQL.jpg" alt="DBMS & Microsoft Fabric SQL" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
                     </div>
                     <div class="cert-header">
@@ -386,13 +386,13 @@
                     </div>
                     <h3 class="cert-title">DBMS & MS FABRIC SQL</h3>
                     <p class="cert-desc">In-depth study of Relational Database Management Systems and SQL implementation within Microsoft Fabric ecosystem.</p>
-                    <a href="/assets/Database Management Systems (RDBMS) & Microsoft Fabric SQL.jpg" target="_blank" class="cert-verify">VIEW CREDENTIAL [→]</a>
+                    <button class="cert-verify view-trigger">VIEW CREDENTIAL [→]</button>
                 </div>
 
                 <!-- 5. TCS ION -->
                 <div class="cert-card reveal-up" style="transition-delay: 0.4s;">
-                    <div class="cert-image">
-                        <img src="/assets/TCS ION Career Edge - Young Professional.jpg" alt="TCS ION Career Edge" loading="lazy">
+                    <div class="cert-image clickable-cert">
+                        <img src="/assets/TCS%20ION%20Career%20Edge%20-%20Young%20Professional.jpg" alt="TCS ION Career Edge" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
                     </div>
                     <div class="cert-header">
@@ -404,7 +404,7 @@
                     </div>
                     <h3 class="cert-title">CAREER EDGE - YOUNG PROFESSIONAL</h3>
                     <p class="cert-desc">Developed essential soft skills, business communication, and professional ethics for corporate readiness.</p>
-                    <a href="/assets/TCS ION Career Edge - Young Professional.jpg" target="_blank" class="cert-verify">VIEW CREDENTIAL [→]</a>
+                    <button class="cert-verify view-trigger">VIEW CREDENTIAL [→]</button>
                 </div>
             </div>
         </section>
@@ -625,6 +625,13 @@
         </div>
         <div class="footer-copy">© 2026 JAYASAI PUJARI. ALL SYSTEM LOGS RESERVED.</div>
     </footer>
+
+    <!-- LIGHTBOX OVERLAY -->
+    <div id="cert-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
 
     <script type="module" src="/script.js"></script>
 </body>

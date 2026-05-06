@@ -150,6 +150,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 8. LIGHTBOX LOGIC
+    const lightbox = document.getElementById('cert-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    if (lightbox) {
+        document.querySelectorAll('.clickable-cert, .view-trigger').forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                const card = trigger.closest('.cert-card');
+                const img = card.querySelector('img');
+                const title = card.querySelector('.cert-title').textContent;
+                
+                lightbox.style.display = 'block';
+                lightboxImg.src = img.src;
+                lightboxCaption.textContent = title;
+                document.body.style.overflow = 'hidden'; // Prevent scroll
+            });
+        });
+
+        const closeLightbox = () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scroll
+        };
+
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        
+        // Escape key close
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    }
+
     // Start loading sequence
     loadSystem();
 
