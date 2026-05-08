@@ -900,38 +900,79 @@ blockquote {
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
-/* COMPACT SECTIONS */
+/* ULTRA COMPACT DENSITY */
+body {
+    font-size: 0.8rem; /* Reduced from 0.9rem */
+}
+
 .about-section,
 .skills-stack-section,
 .certs-section,
 #works { 
-    padding: 4rem var(--container-padding) !important; 
+    padding: 2rem var(--container-padding) !important; 
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem !important; /* Reduced from 3rem */
 }
 
 /* Item Adjustments for Horizontal Flow */
+.skills-stack-grid,
+.certs-grid,
+.projects-grid {
+    gap: 1rem !important; /* Tighter gap */
+    padding: 1rem 0 !important;
+}
+
 .skills-col,
 .cert-card,
 .project-card {
-    min-width: 280px; /* Reduced from 350px */
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin-bottom: 1rem; 
-    padding: 1.5rem !important; /* Slightly smaller padding */
+    min-width: 220px; /* Further reduced from 280px */
+    padding: 1rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name,
+.cert-title,
+.project-title {
+    font-size: 1rem !important; /* Consistent small titles */
+    letter-spacing: 1px;
+}
+
+.skill-context,
+.cert-desc,
+.project-desc {
+    font-size: 0.7rem !important; /* Smaller description text */
+    line-height: 1.4;
 }
 
 .cert-image {
-    height: 140px !important; /* Reduced from 180px */
+    height: 110px !important; /* Even smaller */
 }
 
 .project-thumb {
-    height: 200px !important; /* Reduced from 280px */
+    height: 150px !important; /* Even smaller */
+}
+
+.metric-badge {
+    font-size: 0.55rem;
+    padding: 4px 8px;
+}
+
+.tech-pill {
+    font-size: 0.6rem;
+    padding: 3px 8px;
 }
 
 @media (max-width: 768px) {
     .skills-col,
     .cert-card,
     .project-card {
-        min-width: 250px;
+        min-width: 200px;
     }
 }
 
