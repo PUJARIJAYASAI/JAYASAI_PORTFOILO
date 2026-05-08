@@ -1244,54 +1244,47 @@ footer { padding: 4rem var(--container-padding); display: grid; grid-template-co
     50% { color: var(--accent-color); }
 }
 
-/* RESPONSIVE CONSISTENCY (Force Desktop-like Layout on Mobile) */
+/* RESPONSIVE DESIGN (Adaptive & Compact) */
 @media (max-width: 1024px) {
-    :root { --container-padding: 3%; }
-    /* Maintain multi-column/horizontal layouts */
-    .about-grid, .cta-grid { grid-template-columns: 1fr 1.2fr; gap: 1.5rem; }
+    :root { --container-padding: 5%; }
+    .about-grid, .cta-grid { grid-template-columns: 1fr; gap: 2rem; }
     .hero { 
-        display: flex !important;
-        flex-direction: row !important; 
-        align-items: center !important; 
-        justify-content: space-between !important;
-        gap: 1rem;
-        padding-top: 80px !important;
+        flex-direction: column-reverse !important; 
+        text-align: center !important; 
+        padding-top: 100px !important; 
+        gap: 2rem !important;
     }
-    .hero-content { flex: 1.5; text-align: left; }
-    .hero-image { flex: 1; display: flex; justify-content: flex-end; }
-    .hero-actions { justify-content: flex-start; flex-wrap: nowrap !important; }
-    blockquote { margin: 1rem 0; font-size: 0.7rem; }
-    .img-container { width: 140px; height: 180px; } 
+    .hero-content { text-align: center !important; }
+    .hero-actions { justify-content: center !important; flex-wrap: wrap !important; }
+    .hero-image { justify-content: center !important; }
+    .img-container { width: 220px; height: 280px; margin: 0 auto; }
+    blockquote { margin: 1.5rem auto; max-width: 500px; }
+    .specialization { white-space: normal !important; }
 }
 
 @media (max-width: 768px) {
     .nav-container { display: none; }
     .hamburger { display: flex; }
-    .hero h1 { font-size: 2.5rem !important; line-height: 1; }
-    .specialization { font-size: 0.8rem !important; white-space: nowrap; }
-    .about-title { font-size: 1.2rem !important; }
-    .about-grid { grid-template-columns: 1fr 1.8fr; gap: 1rem; }
+    .hero h1 { font-size: 3rem !important; }
+    .about-title { font-size: 2rem !important; }
+    .section-title { font-size: 2rem !important; }
     
-    /* Ensure scroll sections stay horizontal */
+    /* KEEP SLIDERS HORIZONTAL (This works well on mobile) */
     .skills-stack-grid, .projects-grid, .certs-grid {
         display: flex !important;
         flex-direction: row !important;
+        overflow-x: auto !important;
     }
-    .img-container { width: 110px; height: 140px; }
+    
+    footer { grid-template-columns: 1fr; text-align: center; }
+    .footer-links, .footer-copy { justify-content: center; text-align: center; }
 }
 
 @media (max-width: 480px) {
-    .hero h1 { font-size: 1.8rem !important; }
-    .specialization { font-size: 0.7rem !important; }
-    .hero-actions { 
-        flex-direction: row !important; 
-        gap: 0.4rem !important; 
-    }
-    .btn { padding: 6px 10px !important; font-size: 0.55rem !important; }
-    .resume-options { gap: 0.2rem; }
-    .img-container { width: 100px; height: 130px; }
-    .work-badge { font-size: 0.4rem !important; padding: 2px 6px !important; }
-    .image-meta { font-size: 0.35rem !important; }
-    .section-title { font-size: 1.2rem !important; }
-    .proof-list li { font-size: 0.6rem !important; }
+    .hero h1 { font-size: 2.5rem !important; }
+    .hero-actions { flex-direction: column !important; align-items: center; }
+    .btn { width: 100%; max-width: 300px; text-align: center; }
+    .resume-options { width: 100%; max-width: 300px; justify-content: center; }
+    .img-container { width: 180px; height: 230px; }
+    .proof-list { display: inline-block; text-align: left; }
 }
