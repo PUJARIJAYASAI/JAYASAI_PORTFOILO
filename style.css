@@ -865,8 +865,68 @@ blockquote {
     cursor: pointer;
 }
 
-/* SELECTED WORKS */
-#works { padding: 8rem var(--container-padding); }
+/* HORIZONTAL SCROLL CONTAINERS */
+.skills-stack-grid,
+.certs-grid,
+.projects-grid {
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 2rem !important;
+    padding: 2rem 0 !important;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Custom Scrollbar for Chrome/Safari */
+.skills-stack-grid::-webkit-scrollbar,
+.certs-grid::-webkit-scrollbar,
+.projects-grid::-webkit-scrollbar {
+    height: 4px;
+}
+
+.skills-stack-grid::-webkit-scrollbar-track,
+.certs-grid::-webkit-scrollbar-track,
+.projects-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.skills-stack-grid::-webkit-scrollbar-thumb,
+.certs-grid::-webkit-scrollbar-thumb,
+.projects-grid::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Item Adjustments for Horizontal Flow */
+.skills-col,
+.cert-card,
+.project-card {
+    min-width: 350px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-bottom: 2rem; /* Space for the shadow/glow on hover */
+}
+
+@media (max-width: 768px) {
+    .skills-col,
+    .cert-card,
+    .project-card {
+        min-width: 300px;
+    }
+}
+
+/* Reset specific background/padding that might break flow */
+.skills-col {
+    background: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-stack-grid {
+    background: transparent !important;
+}
 
 .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 .section-title { font-size: 3rem; }
