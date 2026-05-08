@@ -186,6 +186,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 9. VIEW ALL TOGGLE LOGIC
+    document.querySelectorAll('.view-all-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const sectionId = btn.getAttribute('data-section');
+            let grid;
+            if (sectionId === 'skills') grid = document.querySelector('.skills-stack-grid');
+            else if (sectionId === 'certs') grid = document.querySelector('.certs-grid');
+            else if (sectionId === 'works') grid = document.querySelector('.projects-grid');
+
+            if (grid) {
+                const isShowingAll = grid.classList.toggle('show-all');
+                btn.textContent = isShowingAll ? 'SHOW LESS [↑]' : 'VIEW ALL [→]';
+                
+                // Re-trigger scroll reveal for newly shown items
+                if (isShowingAll) {
+                    setTimeout(onScroll, 100);
+                }
+            }
+        });
+    });
+
     // Start loading sequence
     loadSystem();
 

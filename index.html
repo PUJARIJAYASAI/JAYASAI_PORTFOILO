@@ -188,8 +188,13 @@
         <!-- SKILLS STACK -->
         <section id="skills" class="skills-stack-section">
             <div class="skills-stack-header reveal">
-                <div class="section-label">THE KNOWLEDGE GRAPH</div>
-                <h2>SKILLS STACK</h2>
+                <div class="header-flex">
+                    <div>
+                        <div class="section-label">THE KNOWLEDGE GRAPH</div>
+                        <h2>SKILLS STACK</h2>
+                    </div>
+                    <button class="view-all-btn" data-section="skills">VIEW ALL [→]</button>
+                </div>
             </div>
 
             <div class="skills-stack-grid">
@@ -256,8 +261,8 @@
                     </div>
                 </div>
 
-                <!-- TECHNOLOGIES -->
-                <div class="skills-col reveal-up" style="transition-delay: 0.2s;">
+                <!-- TECHNOLOGIES (Initially Hidden) -->
+                <div class="skills-col reveal-up hidden-item" style="transition-delay: 0.2s;">
                     <div class="col-head">
                         <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -314,10 +319,14 @@
 
         <!-- CERTIFICATIONS SECTION -->
         <section id="certs" class="certs-section">
-            <div class="section-label reveal">CERTIFICATION_REGISTRY / VERIFIED CREDENTIALS</div>
-            <div class="section-header reveal">
-                <h2 class="section-title">CERTIFICATIONS</h2>
-                <div class="section-meta">/ 05 VERIFIED LOGS</div>
+            <div class="certs-header reveal">
+                <div class="header-flex">
+                    <div>
+                        <div class="section-label">ACCREDITATIONS / LOGS</div>
+                        <h2>CERTIFICATIONS</h2>
+                    </div>
+                    <button class="view-all-btn" data-section="certs">VIEW ALL [→]</button>
+                </div>
             </div>
 
             <div class="certs-grid">
@@ -340,7 +349,7 @@
                 </div>
 
                 <!-- 2. J.P. MORGAN -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.1s;">
+                <div class="cert-card reveal-up hidden-item" style="transition-delay: 0.1s;">
                     <div class="cert-image clickable-cert">
                         <img src="/assets/J.P.%20Morgan%20-%20Software%20Engineering%20Job%20Simulation.png" alt="J.P. Morgan Software Engineering" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
@@ -358,7 +367,7 @@
                 </div>
 
                 <!-- 3. DELOITTE DATA -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.2s;">
+                <div class="cert-card reveal-up hidden-item" style="transition-delay: 0.2s;">
                     <div class="cert-image clickable-cert">
                         <img src="/assets/Deloitte%20Australia%20-%20Data%20Analytics%20Job%20Simulation.png" alt="Deloitte Data Analytics" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
@@ -376,7 +385,7 @@
                 </div>
 
                 <!-- 4. DBMS & MS FABRIC -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.3s;">
+                <div class="cert-card reveal-up hidden-item" style="transition-delay: 0.3s;">
                     <div class="cert-image clickable-cert">
                         <img src="/assets/Database%20Management%20Systems%20(RDBMS)%20&%20Microsoft%20Fabric%20SQL.jpg" alt="DBMS & Microsoft Fabric SQL" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
@@ -394,7 +403,7 @@
                 </div>
 
                 <!-- 5. TCS ION -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.4s;">
+                <div class="cert-card reveal-up hidden-item" style="transition-delay: 0.4s;">
                     <div class="cert-image clickable-cert">
                         <img src="/assets/TCS%20ION%20Career%20Edge%20-%20Young%20Professional.jpg" alt="TCS ION Career Edge" loading="lazy">
                         <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
@@ -426,7 +435,7 @@
 
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <article class="project-card reveal-up">
+                <article class="project-card reveal-up hidden-item">
                     <div class="project-thumb">
                         <img src="/assets/project1.png" alt="Intrusion Detection System" loading="lazy">
                         <div class="project-overlay">
@@ -478,7 +487,7 @@
                 </article>
 
                 <!-- Project 2 -->
-                <article class="project-card reveal-up" style="transition-delay: 0.1s;">
+                <article class="project-card reveal-up hidden-item" style="transition-delay: 0.1s;">
                     <div class="project-thumb">
                         <img src="/assets/project2.jpg" alt="Cop Connect Project" loading="lazy">
                         <div class="project-overlay">
@@ -523,7 +532,7 @@
                     </div>
                 </article>
                 <!-- Project 3 -->
-                <article class="project-card reveal-up" style="transition-delay: 0.2s;">
+                <article class="project-card reveal-up hidden-item" style="transition-delay: 0.2s;">
                     <div class="project-thumb">
                         <img src="/assets/project3.png" alt="AI Health Intake System" loading="lazy">
                         <div class="project-overlay">
