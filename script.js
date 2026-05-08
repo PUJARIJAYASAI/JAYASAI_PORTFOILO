@@ -195,6 +195,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 10. THEME TOGGLE
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    
+    // Apply saved theme on load
+    if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeToggle.textContent = '☀️';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'light') {
+            document.documentElement.removeAttribute('data-theme');
+            themeToggle.textContent = '🌙';
+            localStorage.setItem('portfolio-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeToggle.textContent = '☀️';
+            localStorage.setItem('portfolio-theme', 'light');
+        }
+    });
+
     // Start loading sequence
     loadSystem();
 
