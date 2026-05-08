@@ -1643,6 +1643,16 @@ footer {
     display: none !important;
 }
 
+.show-all.skills-stack-grid,
+.show-all.certs-grid,
+.show-all.projects-grid {
+    display: grid !important;
+    overflow-x: visible !important;
+    flex-wrap: wrap !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem !important;
+}
+
 .show-all .hidden-item {
     display: flex !important;
     animation: revealSlow 0.6s ease forwards;
