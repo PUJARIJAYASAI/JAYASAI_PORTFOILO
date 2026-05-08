@@ -900,21 +900,38 @@ blockquote {
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
+/* COMPACT SECTIONS */
+.about-section,
+.skills-stack-section,
+.certs-section,
+#works { 
+    padding: 4rem var(--container-padding) !important; 
+}
+
 /* Item Adjustments for Horizontal Flow */
 .skills-col,
 .cert-card,
 .project-card {
-    min-width: 350px;
+    min-width: 280px; /* Reduced from 350px */
     flex: 0 0 auto;
     scroll-snap-align: start;
-    margin-bottom: 2rem; /* Space for the shadow/glow on hover */
+    margin-bottom: 1rem; 
+    padding: 1.5rem !important; /* Slightly smaller padding */
+}
+
+.cert-image {
+    height: 140px !important; /* Reduced from 180px */
+}
+
+.project-thumb {
+    height: 200px !important; /* Reduced from 280px */
 }
 
 @media (max-width: 768px) {
     .skills-col,
     .cert-card,
     .project-card {
-        min-width: 300px;
+        min-width: 250px;
     }
 }
 
