@@ -1612,7 +1612,114 @@ footer {
     }
 }
 
+/* COLLAPSED CARDS - Show less content initially, expand on click */
 
+/* Skill cards: hide description initially */
+.skill-context-card {
+    cursor: pointer;
+    max-height: 55px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.skill-context-card .skill-context {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.skill-context-card.expanded {
+    max-height: 200px;
+}
+
+.skill-context-card.expanded .skill-context {
+    opacity: 1;
+    max-height: 100px;
+}
+
+/* Cert cards: hide image and description initially */
+.cert-card {
+    cursor: pointer;
+    gap: 0.8rem !important;
+}
+
+.cert-card .cert-image,
+.cert-card .cert-desc {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+.cert-card.expanded .cert-image {
+    max-height: 180px;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.cert-card.expanded .cert-desc {
+    max-height: 100px;
+    opacity: 1;
+}
+
+/* Project cards: hide details below title initially */
+.project-card .project-desc,
+.project-card .project-info-grid,
+.project-card .tech-stack-categorized,
+.project-card .tech-stack {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+.project-card.expanded .project-desc {
+    max-height: 100px;
+    opacity: 1;
+    margin-bottom: 0.5rem;
+}
+
+.project-card.expanded .project-info-grid {
+    max-height: 500px;
+    opacity: 1;
+    margin: 1rem 0;
+    padding-top: 1rem;
+}
+
+.project-card.expanded .tech-stack-categorized,
+.project-card.expanded .tech-stack {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+/* Expand indicator on all collapsed cards */
+.skill-context-card::after,
+.cert-card::after,
+.project-card::after {
+    content: '▼ TAP TO EXPAND';
+    display: block;
+    text-align: center;
+    font-size: 0.5rem;
+    color: var(--accent-color);
+    opacity: 0.5;
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+    font-family: var(--font-mono);
+    transition: opacity 0.3s ease;
+}
+
+.skill-context-card.expanded::after,
+.cert-card.expanded::after,
+.project-card.expanded::after {
+    content: '▲ COLLAPSE';
+    opacity: 0.3;
+}
 
 
 

@@ -186,6 +186,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 9. CARD EXPAND/COLLAPSE
+    document.querySelectorAll('.skill-context-card, .cert-card, .project-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Don't toggle if clicking on a link or button inside the card
+            if (e.target.closest('a, button, .clickable-cert, .view-trigger')) return;
+            card.classList.toggle('expanded');
+        });
+    });
+
     // Start loading sequence
     loadSystem();
 
