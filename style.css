@@ -1248,36 +1248,50 @@ footer { padding: 4rem var(--container-padding); display: grid; grid-template-co
 @media (max-width: 1024px) {
     :root { --container-padding: 3%; }
     /* Maintain multi-column/horizontal layouts */
-    .about-grid, .cta-grid { grid-template-columns: 1fr 1.2fr; gap: 2rem; }
-    .hero { flex-direction: row; align-items: center; }
-    .hero-content { text-align: left; }
-    .hero-actions { justify-content: flex-start; }
-    blockquote { margin: 1rem 0; }
-    .hero-image { display: flex; }
-    .img-container { width: 180px; height: 220px; } /* Scale down profile for mobile */
+    .about-grid, .cta-grid { grid-template-columns: 1fr 1.2fr; gap: 1.5rem; }
+    .hero { 
+        display: flex !important;
+        flex-direction: row !important; 
+        align-items: center !important; 
+        justify-content: space-between !important;
+        gap: 1rem;
+        padding-top: 80px !important;
+    }
+    .hero-content { flex: 1.5; text-align: left; }
+    .hero-image { flex: 1; display: flex; justify-content: flex-end; }
+    .hero-actions { justify-content: flex-start; flex-wrap: nowrap !important; }
+    blockquote { margin: 1rem 0; font-size: 0.7rem; }
+    .img-container { width: 140px; height: 180px; } 
 }
 
 @media (max-width: 768px) {
     .nav-container { display: none; }
     .hamburger { display: flex; }
-    .hero h1 { font-size: 3rem; }
-    .about-title { font-size: 1.5rem; }
-    .about-grid { grid-template-columns: 1fr 1.5fr; gap: 1rem; }
-    .about-visual { display: flex; align-items: center; }
-    .img-wrapper { width: 100%; aspect-ratio: 1; }
+    .hero h1 { font-size: 2.5rem !important; line-height: 1; }
+    .specialization { font-size: 0.8rem !important; white-space: nowrap; }
+    .about-title { font-size: 1.2rem !important; }
+    .about-grid { grid-template-columns: 1fr 1.8fr; gap: 1rem; }
     
     /* Ensure scroll sections stay horizontal */
     .skills-stack-grid, .projects-grid, .certs-grid {
         display: flex !important;
         flex-direction: row !important;
     }
+    .img-container { width: 110px; height: 140px; }
 }
 
 @media (max-width: 480px) {
-    .hero h1 { font-size: 2.2rem; }
-    .hero-actions { flex-direction: row; gap: 0.5rem; flex-wrap: wrap; }
-    .btn { padding: 8px 12px; font-size: 0.6rem; }
+    .hero h1 { font-size: 1.8rem !important; }
+    .specialization { font-size: 0.7rem !important; }
+    .hero-actions { 
+        flex-direction: row !important; 
+        gap: 0.4rem !important; 
+    }
+    .btn { padding: 6px 10px !important; font-size: 0.55rem !important; }
     .resume-options { gap: 0.2rem; }
-    .img-container { width: 120px; height: 150px; }
-    .section-title { font-size: 1.5rem !important; }
+    .img-container { width: 100px; height: 130px; }
+    .work-badge { font-size: 0.4rem !important; padding: 2px 6px !important; }
+    .image-meta { font-size: 0.35rem !important; }
+    .section-title { font-size: 1.2rem !important; }
+    .proof-list li { font-size: 0.6rem !important; }
 }
