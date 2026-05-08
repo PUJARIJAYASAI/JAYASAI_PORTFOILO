@@ -459,6 +459,11 @@ blockquote {
     100% { box-shadow: 0 0 5px var(--accent-glow); }
 }
 
+.resume-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .hero-image { flex: 1; display: flex; justify-content: flex-end; }
 .img-container { 
     width: 400px; 
