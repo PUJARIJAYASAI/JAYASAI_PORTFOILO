@@ -195,28 +195,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 10. THEME TOGGLE
+    // 10. THEME TOGGLE (Clean SVG icons instead of emojis)
     const themeToggle = document.getElementById('theme-toggle');
     const savedTheme = localStorage.getItem('portfolio-theme');
+    const sunIconSvg = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+    const moonIconSvg = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+
+    const updateThemeIcon = (theme) => {
+        if (themeToggle) {
+            themeToggle.innerHTML = theme === 'light' ? sunIconSvg : moonIconSvg;
+        }
+    };
     
     // Apply saved theme on load
     if (savedTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeToggle.textContent = '☀️';
+        updateThemeIcon('light');
+    } else {
+        updateThemeIcon('dark');
     }
 
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        if (currentTheme === 'light') {
-            document.documentElement.removeAttribute('data-theme');
-            themeToggle.textContent = '🌙';
-            localStorage.setItem('portfolio-theme', 'dark');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            themeToggle.textContent = '☀️';
-            localStorage.setItem('portfolio-theme', 'light');
-        }
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                document.documentElement.removeAttribute('data-theme');
+                updateThemeIcon('dark');
+                localStorage.setItem('portfolio-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                updateThemeIcon('light');
+                localStorage.setItem('portfolio-theme', 'light');
+            }
+        });
+    }
 
     // 11. HERO TERMINAL CLI
     const cliInput = document.getElementById('hero-cli-input');
