@@ -119,6 +119,25 @@ img {
     display: block;
 }
 
+/* RISO DITHER WEBGL BACKGROUND (RETRO HALFTONE DITHER) */
+.riso-dither-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -3;
+    opacity: 0.52;
+    transition: opacity 0.5s ease;
+    mix-blend-mode: screen;
+}
+
+[data-theme="light"] .riso-dither-bg {
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+}
+
 /* AMBIENT BACKGROUND TEXTURE & GLOWS */
 .background-grid {
     position: fixed;

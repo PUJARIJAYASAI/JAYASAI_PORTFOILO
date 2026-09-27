@@ -1,4 +1,9 @@
+import { initRisoDither } from './riso-dither.js';
+
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. INITIALIZE RISO DITHER WEBGL BACKGROUND
+    initRisoDither('riso-dither-canvas');
+
     // 1. PRELOADER LOGIC
     const preloader = document.getElementById('preloader');
     const loaderLines = document.querySelectorAll('.loader-line');
