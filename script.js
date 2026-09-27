@@ -218,6 +218,156 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 11. HERO TERMINAL CLI
+    const cliInput = document.getElementById('hero-cli-input');
+    const cliOutput = document.getElementById('hero-cli-output');
+    const cliChips = document.querySelectorAll('.cli-chip');
+
+    const executeCliCommand = (cmd) => {
+        const cleanCmd = cmd.trim().toLowerCase();
+        if (!cleanCmd) return;
+
+        if (cleanCmd === 'clear' || cleanCmd === 'cls') {
+            cliOutput.innerHTML = '';
+            cliOutput.classList.remove('active');
+            if (cliInput) cliInput.value = '';
+            return;
+        }
+
+        cliOutput.classList.add('active');
+
+        let response = '';
+        if (cleanCmd === 'help') {
+            response = 'Available commands:<br>' +
+                '• <span class="accent-text">projects</span> - View featured engineering projects<br>' +
+                '• <span class="accent-text">stack</span> - View technologies & tools<br>' +
+                '• <span class="accent-text">whoami</span> - Engineer profile overview<br>' +
+                '• <span class="accent-text">contact</span> - Direct contact channels<br>' +
+                '• <span class="accent-text">resume</span> - View or download PDF resume<br>' +
+                '• <span class="accent-text">clear</span> - Clear terminal output';
+        } else if (cleanCmd === 'projects') {
+            response = 'Featured Projects:<br>' +
+                '1. <a href="#works">Hybrid ML-RL Intrusion Detector</a> (CNN-LSTM + Q-Learning, 98.5% acc)<br>' +
+                '2. <a href="#works">Cop Connect</a> (Flask + Firebase civic platform)<br>' +
+                '3. <a href="#works">AI Health Intake System</a> (Spring Boot + OpenAI API + K8s)<br>' +
+                '<span class="accent-text">Tip: Scroll down to #works to see full case studies.</span>';
+        } else if (cleanCmd === 'stack') {
+            response = 'Technical Stack:<br>' +
+                '• Languages: Python, Java, SQL, JavaScript<br>' +
+                '• AI & Data: PyTorch, Scikit-learn, Pandas, NumPy, NLP<br>' +
+                '• Backend: Flask, Spring Boot, REST APIs<br>' +
+                '• Cloud/DevOps: Docker, Kubernetes, Git, Firebase';
+        } else if (cleanCmd === 'whoami') {
+            response = 'Jayasai Pujari — Software Engineer & AI/ML Developer.<br>' +
+                'Location: Andhra Pradesh, India (UTC+5:30).<br>' +
+                'Focus: Building intelligent systems bridging machine learning with scalable backend infrastructure.';
+        } else if (cleanCmd === 'contact') {
+            response = 'Contact Information:<br>' +
+                '• Email: <a href="mailto:pujarijayasai@gmail.com">pujarijayasai@gmail.com</a><br>' +
+                '• Phone: +91 9381453961<br>' +
+                '• GitHub: <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">github.com/PUJARIJAYASAI</a><br>' +
+                '• LinkedIn: <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer">linkedin.com/in/pujarijayasai</a>';
+        } else if (cleanCmd === 'resume') {
+            response = 'Resume Actions:<br>' +
+                '• <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume PDF</a><br>' +
+                '• <a href="/assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf">Download Resume PDF</a>';
+        } else {
+            response = `Command not recognized: "${cleanCmd}". Type <span class="accent-text">help</span> to view available commands.`;
+        }
+
+        const entry = document.createElement('div');
+        entry.className = 'cli-log-entry';
+        entry.innerHTML = `<div class="cli-echo">&gt; ${cleanCmd}</div><div class="cli-res">${response}</div>`;
+        cliOutput.appendChild(entry);
+        cliOutput.scrollTop = cliOutput.scrollHeight;
+
+        if (cliInput) cliInput.value = '';
+    };
+
+    if (cliInput) {
+        cliInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                executeCliCommand(cliInput.value);
+            }
+        });
+    }
+
+    cliChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            const cmd = chip.getAttribute('data-cmd');
+            if (cmd) executeCliCommand(cmd);
+        });
+    });
+
+    // 12. PROJECT CATEGORY FILTERS
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.projects-grid .project-card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.classList.remove('filter-hidden');
+                } else {
+                    card.classList.add('filter-hidden');
+                }
+            });
+        });
+    });
+
+    // 13. COPY TO CLIPBOARD & HUD TOAST
+    const toast = document.getElementById('cyber-toast');
+    let toastTimeout = null;
+
+    const showToast = (message) => {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('show');
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+            toast.classList.remove('show');
+        }, 2500);
+    };
+
+    document.querySelectorAll('.copy-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const textToCopy = trigger.getAttribute('data-copy');
+            if (!textToCopy) return;
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showToast(`> COPIED TO CLIPBOARD: ${textToCopy}`);
+                }).catch(() => {
+                    fallbackCopy(textToCopy);
+                });
+            } else {
+                fallbackCopy(textToCopy);
+            }
+        });
+    });
+
+    const fallbackCopy = (text) => {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            showToast(`> COPIED TO CLIPBOARD: ${text}`);
+        } catch (err) {
+            showToast(`> MANUAL COPY: ${text}`);
+        }
+        document.body.removeChild(textarea);
+    };
+
     // Start loading sequence
     loadSystem();
 

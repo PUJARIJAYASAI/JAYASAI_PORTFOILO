@@ -152,6 +152,34 @@
                 <div class="active-project-callout reveal-up" style="transition-delay: 0.5s;">
                     <span class="pulse-icon">⚡</span> Currently building a Real-Time AI Intrusion Detection System
                 </div>
+
+                <!-- HERO TERMINAL CLI -->
+                <div class="hero-terminal reveal-up" style="transition-delay: 0.6s;">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <span class="terminal-title">jayasai@systems-box:~ (interactive shell)</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-hints">
+                            <span class="hints-label">QUICK CMDS:</span>
+                            <button type="button" class="cli-chip" data-cmd="help">help</button>
+                            <button type="button" class="cli-chip" data-cmd="projects">projects</button>
+                            <button type="button" class="cli-chip" data-cmd="stack">stack</button>
+                            <button type="button" class="cli-chip" data-cmd="whoami">whoami</button>
+                            <button type="button" class="cli-chip" data-cmd="contact">contact</button>
+                            <button type="button" class="cli-chip" data-cmd="clear">clear</button>
+                        </div>
+                        <div class="terminal-input-row">
+                            <span class="prompt-sym">&gt;</span>
+                            <input type="text" id="hero-cli-input" placeholder="type 'help' or click a command..." autocomplete="off" spellcheck="false">
+                        </div>
+                        <div id="hero-cli-output" class="terminal-output"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -434,9 +462,16 @@
                 <div class="section-meta">/ 03 PROJECTS TOTAL</div>
             </div>
 
+            <!-- PROJECT CATEGORY FILTERS -->
+            <div class="project-filters reveal">
+                <button type="button" class="filter-btn active" data-filter="all">ALL WORKS (3)</button>
+                <button type="button" class="filter-btn" data-filter="ai-ml">AI & MACHINE LEARNING (2)</button>
+                <button type="button" class="filter-btn" data-filter="fullstack">FULL-STACK & BACKEND (1)</button>
+            </div>
+
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <article class="project-card expanded reveal-up">
+                <article class="project-card expanded reveal-up" data-category="ai-ml">
                     <div class="project-thumb">
                         <img src="/assets/project1.png" alt="Intrusion Detection System" loading="lazy">
                         <div class="project-overlay">
@@ -488,7 +523,7 @@
                 </article>
 
                 <!-- Project 2 -->
-                <article class="project-card reveal-up" style="transition-delay: 0.1s;">
+                <article class="project-card reveal-up" data-category="fullstack" style="transition-delay: 0.1s;">
                     <div class="project-thumb">
                         <img src="/assets/project2.jpg" alt="Cop Connect Project" loading="lazy">
                         <div class="project-overlay">
@@ -533,7 +568,7 @@
                     </div>
                 </article>
                 <!-- Project 3 -->
-                <article class="project-card reveal-up" style="transition-delay: 0.2s;">
+                <article class="project-card reveal-up" data-category="ai-ml" style="transition-delay: 0.2s;">
                     <div class="project-thumb">
                         <img src="/assets/project3.png" alt="AI Health Intake System" loading="lazy">
                         <div class="project-overlay">
@@ -619,8 +654,14 @@
                         <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">GITHUB</a>
                     </div>
                     <div class="cta-contact-info">
-                        <span>📧 pujarijayasai@gmail.com</span>
-                        <span>📱 +91 9381453961</span>
+                        <button type="button" class="copy-trigger" data-copy="pujarijayasai@gmail.com" title="Click to copy email">
+                            <span>📧 pujarijayasai@gmail.com</span>
+                            <span class="copy-badge">COPY</span>
+                        </button>
+                        <button type="button" class="copy-trigger" data-copy="+919381453961" title="Click to copy phone">
+                            <span>📱 +91 9381453961</span>
+                            <span class="copy-badge">COPY</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -638,11 +679,20 @@
             <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
         </div>
         <div class="footer-contact">
-            <span>pujarijayasai@gmail.com</span>
-            <span>+91 9381453961</span>
+            <button type="button" class="copy-trigger footer-copy-btn" data-copy="pujarijayasai@gmail.com" title="Click to copy email">
+                <span>pujarijayasai@gmail.com</span>
+                <span class="copy-badge-inline">COPY</span>
+            </button>
+            <button type="button" class="copy-trigger footer-copy-btn" data-copy="+919381453961" title="Click to copy phone">
+                <span>+91 9381453961</span>
+                <span class="copy-badge-inline">COPY</span>
+            </button>
         </div>
         <div class="footer-copy">© 2026 JAYASAI PUJARI. ALL SYSTEM LOGS RESERVED.</div>
     </footer>
+
+    <!-- CYBER HUD TOAST NOTIFICATION -->
+    <div id="cyber-toast" class="cyber-toast" aria-live="polite"></div>
 
     <!-- LIGHTBOX OVERLAY -->
     <div id="cert-lightbox" class="lightbox">
