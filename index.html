@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayasai Pujari | Software Engineer | AI/ML Developer</title>
+    <title>Jayasai Pujari | Software Engineer & AI/ML Developer</title>
     <meta name="description"
-        content="Portfolio of Jayasai Pujari, v1.1 - Software Engineer and AI/ML Developer specializing in intelligent systems and scalable applications.">
+        content="Portfolio of Jayasai Pujari — Software Engineer and AI/ML Developer specializing in intelligent systems, quantitative finance, and scalable backend architectures.">
     
     <link rel="canonical" href="https://jayasai-portfoilo.vercel.app/">
 
@@ -14,20 +14,20 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jayasai-portfoilo.vercel.app/">
     <meta property="og:title" content="Jayasai Pujari | Software Engineer & AI/ML Developer">
-    <meta property="og:description" content="Portfolio of Jayasai Pujari - Software Engineer & AI/ML Developer specializing in intelligent systems and scalable applications.">
+    <meta property="og:description" content="Portfolio of Jayasai Pujari — Software Engineer & AI/ML Developer specializing in intelligent systems, quantitative finance, and scalable backend infrastructure.">
     <meta property="og:image" content="https://jayasai-portfoilo.vercel.app/assets/profile.jpg">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://jayasai-portfoilo.vercel.app/">
     <meta name="twitter:title" content="Jayasai Pujari | Software Engineer & AI/ML Developer">
-    <meta name="twitter:description" content="Portfolio of Jayasai Pujari - Software Engineer & AI/ML Developer specializing in intelligent systems and scalable applications.">
+    <meta name="twitter:description" content="Portfolio of Jayasai Pujari — Software Engineer & AI/ML Developer specializing in intelligent systems, quantitative finance, and scalable backend infrastructure.">
     <meta name="twitter:image" content="https://jayasai-portfoilo.vercel.app/assets/profile.jpg">
 
-    <!-- Fonts & Performance -->
+    <!-- Fonts & Performance (Inter + JetBrains Mono for Theodor Framer aesthetic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;700&family=Baskervville:ital@0;1&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
 
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -38,8 +38,12 @@
     <div id="preloader">
         <div class="preloader-content">
             <div class="terminal-loader">
-                <p class="loader-line">> INITIALIZING SYSTEM...</p>
-                <p class="loader-line">> LOADING MODULES...</p>
+                <div class="loader-header">
+                    <span class="loader-pulse"></span>
+                    <span class="loader-title">JAYASAI PUJARI // PORTFOLIO OS</span>
+                </div>
+                <p class="loader-line">> INITIALIZING KERNEL...</p>
+                <p class="loader-line">> LOADING INTELLIGENCE MODULES...</p>
                 <p class="loader-line">> ACCESS GRANTED</p>
                 <div class="loader-progress">
                     <div class="loader-bar"></div>
@@ -48,774 +52,918 @@
         </div>
     </div>
 
-    <!-- SCROLL PROGRESS -->
+    <!-- SCROLL PROGRESS BAR -->
     <div class="scroll-progress-container">
         <div id="scroll-progress"></div>
     </div>
 
-    <!-- BACKGROUND -->
+    <!-- BACKGROUND TEXTURES -->
     <div class="background-grid"></div>
-
-    <!-- OVERLAYS -->
     <div class="overlay noise"></div>
-    <div class="overlay scanlines"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">JAYASAI PUJARI</div>
+    <!-- FLOATING PILL NAVBAR (THEODOR STYLE) -->
+    <header class="navbar-wrapper">
+        <nav class="navbar floating-pill">
+            <a href="#hero" class="nav-brand" aria-label="Home">
+                <div class="brand-avatar">
+                    <img src="/assets/profile.jpg" alt="Jayasai Pujari Avatar">
+                    <span class="status-indicator"></span>
+                </div>
+                <div class="brand-info">
+                    <span class="brand-name">JAYASAI PUJARI</span>
+                    <span class="brand-role">SWE · AI/ML</span>
+                </div>
+            </a>
 
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="#hero">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#certs">CERTIFICATIONS</a>
-                <a href="#works">WORK</a>
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#hero" class="active">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#works">WORKS</a>
+                    <a href="#skills">DISCIPLINES</a>
+                    <a href="#certs">CREDENTIALS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
             </div>
-            <div class="nav-socials">
-                <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile"><svg width="20"
-                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
-                    </svg></a>
-                <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile"><svg
-                        width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg></a>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">🌙</button>
+                <a href="#contact" class="btn-talk">Let's Talk</a>
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-        </div>
-
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-
-        <button class="hamburger" aria-label="Toggle Navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </nav>
+        </nav>
+    </header>
 
     <!-- MOBILE MENU OVERLAY -->
     <div class="mobile-menu">
-        <div class="mobile-links">
-            <a href="#hero">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#certs">CERTIFICATIONS</a>
-            <a href="#works">WORK</a>
+        <div class="mobile-menu-inner">
+            <div class="mobile-brand">
+                <img src="/assets/profile.jpg" alt="Jayasai Pujari" class="mobile-avatar">
+                <div>
+                    <div class="mobile-name">Jayasai Pujari</div>
+                    <div class="mobile-sub">Software Engineer & AI/ML Developer</div>
+                </div>
+            </div>
+            <div class="mobile-links">
+                <a href="#hero">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#works">WORKS</a>
+                <a href="#skills">DISCIPLINES</a>
+                <a href="#certs">CREDENTIALS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class="mobile-actions">
+                <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-filled">VIEW RESUME</a>
+                <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GITHUB</a>
+            </div>
         </div>
     </div>
 
     <main>
         <!-- HERO SECTION -->
         <section id="hero" class="hero">
-            <div class="hero-content reveal">
-                <div class="status-badge reveal">
-                    <div class="dot"></div>
-                    AVAILABLE FOR OPPORTUNITIES
-                </div>
-                <h1 class="reveal-up">JAYASAI<br>PUJARI</h1>
-                <p class="specialization reveal-up" style="transition-delay: 0.1s;">
-                    Software Engineer | <span id="typing-text"></span>
-                </p>
-                <ul class="proof-list reveal-up" style="transition-delay: 0.2s;">
-                    <li><span class="check">✔</span> Built ML IDS with high ROC-AUC</li>
-                    <li><span class="check">✔</span> Experience with real-world datasets</li>
-                    <li><span class="check">✔</span> Strong in DSA & system design</li>
-                </ul>
-                <blockquote class="reveal-up" style="transition-delay: 0.3s;">
-                    I build intelligent systems that solve real-world problems — from detecting cyber attacks using AI
-                    to developing scalable full-stack applications.
-                </blockquote>
-                <div class="hero-actions reveal-up" style="transition-delay: 0.4s;">
-                    <a href="#works" class="btn btn-filled btn-glow">View Projects</a>
-                    <div class="resume-options">
-                        <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Resume</a>
-                        <a href="/assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf" class="btn btn-outline btn-icon" title="Download Resume">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <!-- Status Badge -->
+                    <div class="status-badge-theodor reveal-up">
+                        <span class="dot-theodor"></span>
+                        <span class="badge-text">AVAILABLE FOR OPPORTUNITIES & COLLABORATIONS</span>
+                    </div>
+
+                    <!-- Editorial Headline -->
+                    <h1 class="hero-title reveal-up">
+                        Architecting <span class="accent-gradient">Intelligent Systems</span> & Scalable Platforms.
+                    </h1>
+
+                    <!-- Specialization Typing Subtext -->
+                    <p class="hero-subheading reveal-up" style="transition-delay: 0.1s;">
+                        Software Engineer | <span id="typing-text"></span>
+                    </p>
+
+                    <!-- Editorial Narrative Statement -->
+                    <p class="hero-bio reveal-up" style="transition-delay: 0.2s;">
+                        I build high-throughput systems bridging deep learning models with resilient backend infrastructure — from autonomous intrusion detection and quantitative algorithmic trading to cloud-native microservices.
+                    </p>
+
+                    <!-- Theodor-Style Proof Metrics Strip -->
+                    <div class="hero-proof-strip reveal-up" style="transition-delay: 0.3s;">
+                        <div class="proof-card">
+                            <span class="proof-num">98.5%</span>
+                            <span class="proof-label">IDS Model Accuracy</span>
+                        </div>
+                        <div class="proof-card">
+                            <span class="proof-num">94.3%</span>
+                            <span class="proof-label">Vulnerability Precision</span>
+                        </div>
+                        <div class="proof-card">
+                            <span class="proof-num">760+</span>
+                            <span class="proof-label">NSE Stocks Screener</span>
+                        </div>
+                        <div class="proof-card">
+                            <span class="proof-num">5</span>
+                            <span class="proof-label">Production Systems</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Call to Action Buttons -->
+                    <div class="hero-actions reveal-up" style="transition-delay: 0.4s;">
+                        <a href="#works" class="btn btn-pill-primary">Explore Works ↓</a>
+                        <div class="resume-pill-group">
+                            <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-pill-secondary">View Resume</a>
+                            <a href="/assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf" class="btn btn-pill-icon" title="Download Resume PDF" aria-label="Download Resume PDF">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="btn btn-pill-icon" aria-label="Visit GitHub Profile" title="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer" class="btn btn-pill-icon" aria-label="Visit LinkedIn Profile" title="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
                         </a>
                     </div>
-                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-icon" aria-label="View GitHub Profile">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="active-project-callout reveal-up" style="transition-delay: 0.5s;">
-                    <span class="pulse-icon">⚡</span> Currently building a Real-Time AI Intrusion Detection System
-                </div>
 
-                <!-- HERO TERMINAL CLI -->
-                <div class="hero-terminal reveal-up" style="transition-delay: 0.6s;">
-                    <div class="terminal-bar">
-                        <div class="terminal-dots">
-                            <span class="dot-red"></span>
-                            <span class="dot-yellow"></span>
-                            <span class="dot-green"></span>
+                    <!-- HERO TERMINAL CLI (INTEGRATED THEODOR GLASSMORPHIC BOX) -->
+                    <div class="hero-terminal reveal-up" style="transition-delay: 0.5s;">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="terminal-title">jayasai@systems-box:~ (interactive shell)</span>
+                            <span class="terminal-badge">LIVE REPL</span>
                         </div>
-                        <span class="terminal-title">jayasai@systems-box:~ (interactive shell)</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-hints">
-                            <span class="hints-label">QUICK CMDS:</span>
-                            <button type="button" class="cli-chip" data-cmd="help">help</button>
-                            <button type="button" class="cli-chip" data-cmd="projects">projects</button>
-                            <button type="button" class="cli-chip" data-cmd="stack">stack</button>
-                            <button type="button" class="cli-chip" data-cmd="whoami">whoami</button>
-                            <button type="button" class="cli-chip" data-cmd="contact">contact</button>
-                            <button type="button" class="cli-chip" data-cmd="clear">clear</button>
+                        <div class="terminal-body">
+                            <div class="terminal-hints">
+                                <span class="hints-label">QUICK CMDS:</span>
+                                <button type="button" class="cli-chip" data-cmd="help">help</button>
+                                <button type="button" class="cli-chip" data-cmd="projects">projects</button>
+                                <button type="button" class="cli-chip" data-cmd="stack">stack</button>
+                                <button type="button" class="cli-chip" data-cmd="whoami">whoami</button>
+                                <button type="button" class="cli-chip" data-cmd="contact">contact</button>
+                                <button type="button" class="cli-chip" data-cmd="clear">clear</button>
+                            </div>
+                            <div class="terminal-input-row">
+                                <span class="prompt-sym">&gt;</span>
+                                <input type="text" id="hero-cli-input" placeholder="type 'help' or click a command chip..." autocomplete="off" spellcheck="false">
+                            </div>
+                            <div id="hero-cli-output" class="terminal-output"></div>
                         </div>
-                        <div class="terminal-input-row">
-                            <span class="prompt-sym">&gt;</span>
-                            <input type="text" id="hero-cli-input" placeholder="type 'help' or click a command..." autocomplete="off" spellcheck="false">
-                        </div>
-                        <div id="hero-cli-output" class="terminal-output"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT ME & MANIFESTO -->
+        <!-- 01 / ABOUT ME & MANIFESTO -->
         <section id="about" class="about-section">
-            <div class="section-label reveal">SYSTEM LOG / ENGINEER PROFILE</div>
-            <div class="about-header reveal">
-                <h2 class="about-title">STATUS: <span class="accent-text">ACTIVE</span> <br>ROLE: SOFTWARE ENGINEER
-                    <span class="accent-text">(AI/ML SYSTEMS)</span>
-                </h2>
-                <div class="geo-meta">
-                    EST. 2005<br>
-                    LOC: ANDHRA PRADESH, IN<br>
-                    TIME: UTC+5:30
+            <div class="section-container">
+                <div class="section-badge-header reveal">
+                    <span class="section-idx">01</span>
+                    <span class="section-divider">/</span>
+                    <span class="section-idx-title">ABOUT & PHILOSOPHY</span>
                 </div>
-            </div>
 
-            <div class="about-grid">
-                <div class="about-visual reveal">
-                    <div class="img-wrapper">
-                        <img src="/assets/profile.jpg" alt="Profile Dramatic" loading="lazy">
-                        <div class="id-badge">ID: BR_BACKEND_01</div>
+                <div class="about-header reveal">
+                    <h2 class="about-editorial-title">
+                        Engineered for <span class="accent-text">real-world reliability</span>, not just clean notebook benchmarks.
+                    </h2>
+                    <div class="geo-meta-card">
+                        <div class="geo-row"><span class="geo-k">STATUS</span><span class="geo-v active-dot">ACTIVE</span></div>
+                        <div class="geo-row"><span class="geo-k">ROLE</span><span class="geo-v">SWE & AI/ML</span></div>
+                        <div class="geo-row"><span class="geo-k">LOCATION</span><span class="geo-v">ANDHRA PRADESH, IN</span></div>
+                        <div class="geo-row"><span class="geo-k">TIMEZONE</span><span class="geo-v">UTC+5:30 (IST)</span></div>
                     </div>
                 </div>
-                <div class="about-text reveal">
-                    <div class="log-label">LOG_01 / MISSION_STATEMENT</div>
-                    <h3>I design and build intelligent systems that operate in real-world conditions.</h3>
-                    <p>Focused on bridging machine learning with backend engineering, I develop scalable solutions where
-                        models are not just trained — but deployed, optimized, and reliable.</p>
-                    <p>From intrusion detection systems to full-stack applications, my work emphasizes performance,
-                        clarity, and real-world impact.</p>
 
-                    <div class="approach-box">
-                        <div class="log-label">CORE APPROACH:</div>
-                        <ul class="approach-list">
-                            <li>→ Solve complex problems with simple, efficient systems</li>
-                            <li>→ Optimize performance at both model and system level</li>
-                            <li>→ Build for scalability, not just functionality</li>
-                        </ul>
+                <div class="about-grid">
+                    <div class="about-visual reveal">
+                        <div class="portrait-card">
+                            <img src="/assets/profile.jpg" alt="Jayasai Pujari Portrait" loading="lazy">
+                            <div class="portrait-tag">
+                                <span class="tag-live-dot"></span>
+                                <span>JAYASAI PUJARI · SWE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal">
+                        <div class="manifesto-card">
+                            <h3 class="manifesto-h3">I design and deploy intelligent software that performs predictably under production constraints.</h3>
+                            <p class="manifesto-p">
+                                Deep learning models only generate real value when they are hardened, low-latency, and architected into resilient software workflows. My focus is on the crucial intersection where machine learning research meets backend system engineering.
+                            </p>
+                            <p class="manifesto-p">
+                                From processing 78 real-time network flow features for cyber defense to streaming tick-level market depth across 760+ equities, my engineering process emphasizes low algorithmic complexity, robust error boundaries, and scalable API design.
+                            </p>
+
+                            <div class="pillars-row">
+                                <div class="pillar-box">
+                                    <span class="pillar-num">01</span>
+                                    <h4>Empirical Rigor</h4>
+                                    <p>Trained and validated on real-world datasets (CIC-IDS2017, Kotak Neo live ticks, MITRE CVEs) with verified metrics.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <span class="pillar-num">02</span>
+                                    <h4>Algorithmic Efficiency</h4>
+                                    <p>O(1) rate detectors, vectorized mathematical transforms, and thread-safe streaming pipelines for low latency.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <span class="pillar-num">03</span>
+                                    <h4>Cloud-Native Resilience</h4>
+                                    <p>Containerized microservices with Docker, orchestrated with Kubernetes, and backed by battle-tested REST APIs.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SKILLS STACK -->
+        <!-- 02 / SELECTED WORKS -->
+        <section id="works" class="works-section">
+            <div class="section-container">
+                <div class="works-top-header reveal">
+                    <div>
+                        <div class="section-badge-header">
+                            <span class="section-idx">02</span>
+                            <span class="section-divider">/</span>
+                            <span class="section-idx-title">SELECTED WORKS</span>
+                        </div>
+                        <h2 class="section-title">Case Studies & Production Systems</h2>
+                        <p class="section-tagline">
+                            Production-grade engineering projects spanning algorithmic trading, cybersecurity threat intelligence, deep learning, and scalable platforms.
+                        </p>
+                    </div>
+                    <div class="works-count-badge">
+                        <span class="count-num">05</span>
+                        <span class="count-text">VERIFIED SYSTEMS</span>
+                    </div>
+                </div>
+
+                <!-- CATEGORY FILTER PILLS -->
+                <div class="project-filters reveal">
+                    <button type="button" class="filter-btn active" data-filter="all">ALL WORKS (5)</button>
+                    <button type="button" class="filter-btn" data-filter="cybersecurity">CYBERSECURITY (2)</button>
+                    <button type="button" class="filter-btn" data-filter="ai-ml">AI & MACHINE LEARNING (4)</button>
+                    <button type="button" class="filter-btn" data-filter="fintech">QUANT / FINTECH (1)</button>
+                    <button type="button" class="filter-btn" data-filter="fullstack">FULL-STACK (2)</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: AI Trading Terminal -->
+                    <article class="project-card theodor-card reveal-up" data-category="ai-ml fintech">
+                        <div class="card-meta-bar">
+                            <span class="meta-cat-pill">QUANT / FINTECH · ALGORITHMIC TRADING</span>
+                            <span class="meta-year-pill">2024 · LIVE FEEDS</span>
+                        </div>
+                        <div class="project-thumb">
+                            <img src="/assets/trading-terminal.png" alt="Indian Stock Market AI Trading Terminal" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="overlay-title">INSPECT REPOSITORY</span>
+                                <div class="overlay-actions">
+                                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="overlay-btn">VIEW GITHUB ↗</a>
+                                </div>
+                            </div>
+                            <div class="featured-tag">📈 QUANT / FINTECH</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">
+                                AI STOCK TRADING TERMINAL & REGIME ENGINE
+                                <span class="arrow-move">→</span>
+                            </h3>
+                            <p class="project-desc">
+                                A production-grade algorithmic trading terminal and institutional swing screener for Indian equities (NSE/BSE), integrating live Kotak Neo market feeds with multi-model AI for regime classification and probability-ranked trade setups.
+                            </p>
+
+                            <div class="project-info-grid">
+                                <div class="info-block">
+                                    <div class="log-label">🔧 ENGINEERING HIGHLIGHTS</div>
+                                    <ul class="contribution-list">
+                                        <li>6-State GMM / HMM Market Regime Classifier (BULL_ROTATION, BEAR, VOLATILITY)</li>
+                                        <li>7-Factor Composite Screener with Tri-Model AI Ensemble scoring 2R target win probability</li>
+                                        <li>9 Rule-Based Strategies (20 EMA Pullbacks, Anchored VWAP, Minervini SEPA, VCP)</li>
+                                        <li>Live market breadth barometer tracking 760+ NSE stocks in real time</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <div class="log-label">📊 PERFORMANCE LOGS</div>
+                                    <div class="metric-badges">
+                                        <span class="metric-badge">KOTAK NEO LIVE REST</span>
+                                        <span class="metric-badge">760+ STOCKS MONITORED</span>
+                                        <span class="metric-badge">6-STATE REGIME ENGINE</span>
+                                        <span class="metric-badge">TRI-MODEL AI ENSEMBLE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-categorized">
+                                <div class="stack-group">
+                                    <span class="stack-label">Core & API:</span> <span class="stack-val">Python · FastAPI · Kotak Neo REST & WebSockets</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">AI / ML:</span> <span class="stack-val">Gaussian Mixture (GMM) · HMM · XGBoost · Optuna</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Indicators:</span> <span class="stack-val">Pandas · NumPy · TA Engine (EMA, ATR, VWAP)</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Frontend:</span> <span class="stack-val">Responsive UI · TradingView Charting Integration</span>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-actions">
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="card-action-link">
+                                    <span>Source Code on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: AutoRed APT -->
+                    <article class="project-card theodor-card reveal-up" data-category="cybersecurity ai-ml" style="transition-delay: 0.1s;">
+                        <div class="card-meta-bar">
+                            <span class="meta-cat-pill">CYBERSECURITY / AI · LLM + RAG</span>
+                            <span class="meta-year-pill">2024 · RESEARCH</span>
+                        </div>
+                        <div class="project-thumb">
+                            <img src="/assets/autored-apt.png" alt="AutoRed APT Penetration Testing Tool" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="overlay-title">LIVE SYSTEM READY</span>
+                                <div class="overlay-actions">
+                                    <a href="https://autored-apt.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn primary">LIVE DEMO ↗</a>
+                                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="overlay-btn">GITHUB ↗</a>
+                                </div>
+                            </div>
+                            <div class="featured-tag">📜 IEEE RESEARCH PAPER</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">
+                                AUTORED APT : AUTONOMOUS PENETRATION TESTING PLATFORM
+                                <span class="arrow-move">→</span>
+                            </h3>
+                            <p class="project-desc">
+                                A unified web application penetration testing platform that automates reconnaissance, network scanning, CVE discovery, and AI-driven vulnerability interpretation via RAG and MITRE CVE knowledge bases. Co-authored IEEE-style research publication.
+                            </p>
+
+                            <div class="project-info-grid">
+                                <div class="info-block">
+                                    <div class="log-label">🔬 RESEARCH & ARCHITECTURE</div>
+                                    <ul class="contribution-list">
+                                        <li>LLM + Retrieval-Augmented Generation (RAG) querying MITRE CVE API in real time</li>
+                                        <li>End-to-end automated pipeline: WHOIS/DNS OSINT, Nmap port scanning, NSE Vulners</li>
+                                        <li>Evaluated on 5 authorized live targets, discovering 560 vulnerabilities with 94.29% precision</li>
+                                        <li>Automated executive PDF security report synthesis in under 90 seconds</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <div class="log-label">📊 EMPIRICAL METRICS</div>
+                                    <div class="metric-badges">
+                                        <span class="metric-badge">94.29% PRECISION</span>
+                                        <span class="metric-badge">95.65% DETECTION RATE</span>
+                                        <span class="metric-badge">528 / 560 CVES FOUND</span>
+                                        <span class="metric-badge">12.5 MIN TOTAL CYCLE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-categorized">
+                                <div class="stack-group">
+                                    <span class="stack-label">Frontend:</span> <span class="stack-val">React.js · Live Security Dashboard</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Backend:</span> <span class="stack-val">Python · Flask REST API · Firebase Auth</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">AI & RAG:</span> <span class="stack-val">Gemini AI / OpenRouter · MITRE CVE Knowledge API</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Security:</span> <span class="stack-val">Nmap · NSE Vulners · WHOIS · theHarvester</span>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-actions">
+                                <a href="https://autored-apt.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-action-link primary-link">
+                                    <span>Launch Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="card-action-link">
+                                    <span>GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Hybrid ML-RL Intrusion Detector -->
+                    <article class="project-card theodor-card expanded reveal-up" data-category="cybersecurity ai-ml">
+                        <div class="card-meta-bar">
+                            <span class="meta-cat-pill">CYBERSECURITY / AI · DEEP LEARNING</span>
+                            <span class="meta-year-pill">2024 · FLAGSHIP</span>
+                        </div>
+                        <div class="project-thumb">
+                            <img src="/assets/project1.png" alt="Intrusion Detection System" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="overlay-title">VIEW REPOSITORY</span>
+                                <div class="overlay-actions">
+                                    <a href="https://github.com/PUJARIJAYASAI/CNN-LSTM-Intrusion-Detector" target="_blank" rel="noopener noreferrer" class="overlay-btn">GITHUB ↗</a>
+                                </div>
+                            </div>
+                            <div class="featured-tag">⭐ FEATURED SYSTEM</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">
+                                HYBRID ML-RL INTRUSION DETECTOR
+                                <span class="arrow-move">→</span>
+                            </h3>
+                            <p class="project-desc">
+                                A production-grade network intrusion detection system combining CNN-LSTM deep learning with Reinforcement Learning for dynamic anomaly thresholding and real-time defense against complex cyber attacks.
+                            </p>
+
+                            <div class="project-info-grid">
+                                <div class="info-block">
+                                    <div class="log-label">🔧 ENGINEERING HIGHLIGHTS</div>
+                                    <ul class="contribution-list">
+                                        <li>Real-time extraction of 78 bidirectional flow features (CIC-IDS2017)</li>
+                                        <li>Q-Learning RL Agent for dynamic threshold adjustment based on network noise</li>
+                                        <li>O(1) Rate Detectors for SYN Floods and Port Scans (CPU Optimized)</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <div class="log-label">📊 PERFORMANCE LOGS</div>
+                                    <div class="metric-badges">
+                                        <span class="metric-badge">98.5% ACCURACY</span>
+                                        <span class="metric-badge">500K+ RECORDS</span>
+                                        <span class="metric-badge">REAL-TIME TSHARK</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-categorized">
+                                <div class="stack-group">
+                                    <span class="stack-label">Deep Learning:</span> <span class="stack-val">CNN-LSTM · PyTorch</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Detection:</span> <span class="stack-val">Reinforcement Learning · TShark</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Dataset:</span> <span class="stack-val">CIC-IDS2017 · 78 Flow Features</span>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-actions">
+                                <a href="https://github.com/PUJARIJAYASAI/CNN-LSTM-Intrusion-Detector" target="_blank" rel="noopener noreferrer" class="card-action-link">
+                                    <span>Source Code on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: AI Health Intake System -->
+                    <article class="project-card theodor-card reveal-up" data-category="ai-ml fullstack" style="transition-delay: 0.1s;">
+                        <div class="card-meta-bar">
+                            <span class="meta-cat-pill">AI / HEALTHCARE · ENTERPRISE BACKEND</span>
+                            <span class="meta-year-pill">2024 · CLOUD</span>
+                        </div>
+                        <div class="project-thumb">
+                            <img src="/assets/project3.png" alt="AI Health Intake System" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="overlay-title">VIEW REPOSITORY</span>
+                                <div class="overlay-actions">
+                                    <a href="https://github.com/prathamkhairmode15/Spring_Health_App" target="_blank" rel="noopener noreferrer" class="overlay-btn">GITHUB ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">
+                                AI HEALTH INTAKE SYSTEM
+                                <span class="arrow-move">→</span>
+                            </h3>
+                            <p class="project-desc">
+                                Built an AI-powered medical triage system analyzing patient symptoms and generating condition predictions with visual analytics, deployed as a containerized Spring Boot backend service.
+                            </p>
+
+                            <div class="project-info-grid">
+                                <div class="info-block">
+                                    <div class="log-label">🧠 CORE CAPABILITIES</div>
+                                    <ul class="contribution-list">
+                                        <li>Interactive multi-variable intake form with 8+ symptom inputs</li>
+                                        <li>Predicts 7+ health conditions using real-time AI inference</li>
+                                        <li>Visual analytics dashboard for condition probability mapping</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <div class="log-label">🔥 ARCHITECTURE HIGHLIGHTS</div>
+                                    <ul class="contribution-list highlight-list">
+                                        <li>Spring Boot backend for robust concurrent API handling</li>
+                                        <li>Docker containerization & Kubernetes deployment orchestration</li>
+                                        <li>Integrated OpenAI inference API with schema validation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-categorized">
+                                <div class="stack-group">
+                                    <span class="stack-label">Frontend:</span> <span class="stack-val">React · Recharts Visuals</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">Backend:</span> <span class="stack-val">Spring Boot (Java) · REST APIs</span>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-label">DevOps:</span> <span class="stack-val">Docker · Kubernetes</span>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-actions">
+                                <a href="https://github.com/prathamkhairmode15/Spring_Health_App" target="_blank" rel="noopener noreferrer" class="card-action-link">
+                                    <span>Source Code on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Cop Connect -->
+                    <article class="project-card theodor-card reveal-up" data-category="fullstack" style="transition-delay: 0.2s;">
+                        <div class="card-meta-bar">
+                            <span class="meta-cat-pill">CIVIC TECH · FULL-STACK WEB</span>
+                            <span class="meta-year-pill">2024 · DEPLOYED</span>
+                        </div>
+                        <div class="project-thumb">
+                            <img src="/assets/project2.jpg" alt="Cop Connect Project" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="overlay-title">VIEW REPOSITORY</span>
+                                <div class="overlay-actions">
+                                    <a href="https://github.com/PUJARIJAYASAI/cop-connect1" target="_blank" rel="noopener noreferrer" class="overlay-btn">GITHUB ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">
+                                COP CONNECT : CIVIC COORDINATION PLATFORM
+                                <span class="arrow-move">→</span>
+                            </h3>
+                            <p class="project-desc">
+                                Developed a scalable AI-assisted web platform enabling real-time incident reporting, dynamic resource dispatch, and citizen-authority coordination during emergencies.
+                            </p>
+
+                            <div class="project-info-grid">
+                                <div class="info-block">
+                                    <div class="log-label">🔧 KEY CONTRIBUTIONS</div>
+                                    <ul class="contribution-list">
+                                        <li>Architected low-latency backend services using Python & Flask</li>
+                                        <li>Integrated Firebase Realtime Database for live ticket synchronization</li>
+                                        <li>Modular component architecture designed for rapid feature iteration</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <div class="log-label">📊 HIGHLIGHTS</div>
+                                    <div class="metric-badges">
+                                        <span class="metric-badge">REAL-TIME SYNC</span>
+                                        <span class="metric-badge">SCALABLE DESIGN</span>
+                                        <span class="metric-badge">AI INTEGRATED</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-categorized">
+                                <div class="stack-group">
+                                    <span class="stack-label">Stack:</span> <span class="stack-val">Python · Flask · Firebase · HTML5 · CSS3</span>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-actions">
+                                <a href="https://github.com/PUJARIJAYASAI/cop-connect1" target="_blank" rel="noopener noreferrer" class="card-action-link">
+                                    <span>Source Code on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 / CORE DISCIPLINES & KNOWLEDGE GRAPH -->
         <section id="skills" class="skills-stack-section">
-            <div class="skills-stack-header reveal">
-                <div class="section-label">THE KNOWLEDGE GRAPH</div>
-                <h2>SKILLS STACK</h2>
-            </div>
-
-            <div class="skills-stack-grid">
-                <!-- LANGUAGES -->
-                <div class="skills-col reveal-up">
-                    <div class="col-head">
-                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg></div>
-                        <div>
-                            <h3>LANGUAGES</h3>
-                            <span class="sub-label">THE SYNTAX OF LOGIC</span>
-                        </div>
-                    </div>
-                    <div class="skills-cards-list">
-                        <div class="skill-context-card">
-                            <div class="skill-name">PYTHON</div>
-                            <div class="skill-context">Built ML pipelines and backend systems.</div>
-                        </div>
-                        <div class="skill-context-card">
-                            <div class="skill-name">JAVA</div>
-                            <div class="skill-context">Strong in DSA and backend development.</div>
-                        </div>
-                        <div class="skill-context-card">
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-context">Data querying, preprocessing, and optimization.</div>
-                        </div>
-                    </div>
+            <div class="section-container">
+                <div class="section-badge-header reveal">
+                    <span class="section-idx">03</span>
+                    <span class="section-divider">/</span>
+                    <span class="section-idx-title">CORE DISCIPLINES</span>
                 </div>
 
-                <!-- CORE -->
-                <div class="skills-col reveal-up" style="transition-delay: 0.1s;">
-                    <div class="col-head">
-                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5"></path>
-                                <path d="M2 12l10 5 10-5"></path>
-                            </svg></div>
-                        <div>
-                            <h3>CORE</h3>
-                            <span class="sub-label">THE FOUNDATION</span>
-                        </div>
-                    </div>
-                    <div class="skills-cards-list">
-                        <div class="skill-context-card tilt-card">
-                            <div class="skill-name">MACHINE LEARNING</div>
-                            <div class="skill-context">Developed and optimized models on real-world datasets (ROC-AUC, accuracy, tuning).</div>
-                        </div>
-                        <div class="skill-context-card tilt-card">
-                            <div class="skill-name">DATA STRUCTURES & ALGORITHMS</div>
-                            <div class="skill-context">Focus on performance, optimization, and clean implementation.</div>
-                        </div>
-                        <div class="skill-context-card tilt-card">
-                            <div class="skill-name">SYSTEM DESIGN</div>
-                            <div class="skill-context">Designing scalable backend architectures and integrating ML systems into production workflows.</div>
-                        </div>
-                        <div class="skill-context-card tilt-card">
-                            <div class="skill-name">FULL-STACK WEB DEVELOPMENT</div>
-                            <div class="skill-context">Building responsive full-stack applications with API integration and real-time support.</div>
-                        </div>
-                    </div>
+                <div class="skills-stack-header reveal">
+                    <h2 class="section-title">Technical Capabilities & Engineering Pillars</h2>
+                    <p class="section-tagline">
+                        A structured breakdown of core technical proficiencies, architectures, and toolsets utilized across real-world systems.
+                    </p>
                 </div>
 
-                <!-- TECHNOLOGIES -->
-                <div class="skills-col reveal-up" style="transition-delay: 0.2s;">
-                    <div class="col-head">
-                        <div class="col-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg></div>
-                        <div>
-                            <h3>TECHNOLOGIES</h3>
-                            <span class="sub-label">THE TOOL GRID</span>
+                <div class="disciplines-grid">
+                    <!-- Pillar 01: AI & ML -->
+                    <div class="discipline-card reveal-up">
+                        <div class="discipline-top">
+                            <span class="discipline-num">01</span>
+                            <div class="discipline-icon">🤖</div>
+                        </div>
+                        <h3 class="discipline-title">AI & MACHINE LEARNING</h3>
+                        <p class="discipline-desc">
+                            Developing, fine-tuning, and deploying machine learning pipelines on real-world datasets — focusing on high generalization, ROC-AUC, and low false positive rates.
+                        </p>
+                        <div class="discipline-tags">
+                            <span class="disc-tag">PyTorch</span>
+                            <span class="disc-tag">Scikit-learn</span>
+                            <span class="disc-tag">CNN-LSTM</span>
+                            <span class="disc-tag">Q-Learning RL</span>
+                            <span class="disc-tag">GMM & HMM</span>
+                            <span class="disc-tag">XGBoost</span>
+                            <span class="disc-tag">RAG Pipelines</span>
+                            <span class="disc-tag">Pandas / NumPy</span>
                         </div>
                     </div>
 
-                    <div class="tech-category">
-                        <div class="log-label">🤖 ML & DATA</div>
-                        <div class="tech-badge-cloud">
-                            <span class="tech-badge"
-                                title="Used for classification and regression models.">Scikit-learn</span>
-                            <span class="tech-badge" title="Deep learning framework for IDS models.">PyTorch</span>
-                            <span class="tech-badge">Pandas</span>
-                            <span class="tech-badge">NumPy</span>
+                    <!-- Pillar 02: Backend & Cloud -->
+                    <div class="discipline-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="discipline-top">
+                            <span class="discipline-num">02</span>
+                            <div class="discipline-icon">⚙️</div>
+                        </div>
+                        <h3 class="discipline-title">BACKEND & CLOUD ARCHITECTURE</h3>
+                        <p class="discipline-desc">
+                            Designing scalable microservices, low-latency REST and WebSocket endpoints, thread-safe asynchronous handlers, and containerized deployment workflows.
+                        </p>
+                        <div class="discipline-tags">
+                            <span class="disc-tag">Python (FastAPI, Flask)</span>
+                            <span class="disc-tag">Java (Spring Boot)</span>
+                            <span class="disc-tag">Docker</span>
+                            <span class="disc-tag">Kubernetes</span>
+                            <span class="disc-tag">REST & WebSockets</span>
+                            <span class="disc-tag">SQL & RDBMS</span>
+                            <span class="disc-tag">MongoDB</span>
+                            <span class="disc-tag">Firebase</span>
                         </div>
                     </div>
 
-                    <div class="tech-category">
-                        <div class="log-label">🖥️ BACKEND & APIS</div>
-                        <div class="tech-badge-cloud">
-                            <span class="tech-badge">Flask</span>
-                            <span class="tech-badge" title="Java framework for scalable backends.">Spring Boot</span>
+                    <!-- Pillar 03: Autonomous Security -->
+                    <div class="discipline-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="discipline-top">
+                            <span class="discipline-num">03</span>
+                            <div class="discipline-icon">🛡️</div>
+                        </div>
+                        <h3 class="discipline-title">AUTONOMOUS SECURITY & PENTESTING</h3>
+                        <p class="discipline-desc">
+                            Building intelligent network defense systems, automated vulnerability scanners, OSINT reconnaissance pipelines, and MITRE ATT&CK / CVE correlation engines.
+                        </p>
+                        <div class="discipline-tags">
+                            <span class="disc-tag">Intrusion Detection (IDS)</span>
+                            <span class="disc-tag">TShark & Wireshark</span>
+                            <span class="disc-tag">Nmap & NSE</span>
+                            <span class="disc-tag">MITRE CVE Knowledge Base</span>
+                            <span class="disc-tag">WHOIS & OSINT</span>
+                            <span class="disc-tag">CIC-IDS2017 Dataset</span>
+                            <span class="disc-tag">Packet Analysis</span>
                         </div>
                     </div>
 
-                    <div class="tech-category">
-                        <div class="log-label">🗄️ DATABASES</div>
-                        <div class="tech-badge-cloud">
-                            <span class="tech-badge">MongoDB</span>
-                            <span class="tech-badge">Firebase</span>
-                            <span class="tech-badge">SQL</span>
+                    <!-- Pillar 04: Quantitative Systems -->
+                    <div class="discipline-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="discipline-top">
+                            <span class="discipline-num">04</span>
+                            <div class="discipline-icon">📈</div>
                         </div>
-                    </div>
-
-                    <div class="tech-category">
-                        <div class="log-label">⚙️ DEVOPS & TOOLS</div>
-                        <div class="tech-badge-cloud">
-                            <span class="tech-badge">Git</span>
-                            <span class="tech-badge" title="Containerization for reliable deployments.">Docker</span>
-                            <span class="tech-badge"
-                                title="Container orchestration for scaling systems.">Kubernetes</span>
+                        <h3 class="discipline-title">QUANTITATIVE & FINANCIAL SYSTEMS</h3>
+                        <p class="discipline-desc">
+                            Engineering institutional-grade swing trading screener engines, live market breadth monitors, and quantitative execution models for Indian equities (NSE/BSE).
+                        </p>
+                        <div class="discipline-tags">
+                            <span class="disc-tag">Kotak Neo Live API</span>
+                            <span class="disc-tag">Market Regime Modeling</span>
+                            <span class="disc-tag">Anchored VWAP & ATR</span>
+                            <span class="disc-tag">Minervini SEPA & VCP</span>
+                            <span class="disc-tag">Probability Ensembles</span>
+                            <span class="disc-tag">Optuna Hyperparameters</span>
+                            <span class="disc-tag">760+ NSE Stocks Engine</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CERTIFICATIONS SECTION -->
+        <!-- 04 / CERTIFICATIONS SECTION -->
         <section id="certs" class="certs-section">
-            <div class="section-header reveal">
-                <h2 class="section-title">CERTIFICATIONS</h2>
-                <div class="section-meta">/ 05 VERIFIED LOGS</div>
-            </div>
-
-            <div class="certs-grid">
-                <!-- 1. HONEYWELL AI -->
-                <div class="cert-card reveal-up">
-                    <div class="cert-image clickable-cert">
-                        <img src="/assets/Honeywell-artificial-intelligence_page-0001.jpg" alt="Honeywell Artificial Intelligence Certificate" loading="lazy">
-                        <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
-                    </div>
-                    <div class="cert-header">
-                        <div class="cert-icon">🤖</div>
-                        <div class="cert-meta">
-                            <span class="cert-org">HONEYWELL</span>
-                            <span class="cert-date">ISSUED: 2024</span>
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-badge-header">
+                            <span class="section-idx">04</span>
+                            <span class="section-divider">/</span>
+                            <span class="section-idx-title">VERIFIED CREDENTIALS</span>
                         </div>
+                        <h2 class="section-title">Certifications & Industry Simulations</h2>
                     </div>
-                    <h3 class="cert-title">ARTIFICIAL INTELLIGENCE</h3>
-                    <p class="cert-desc">Exploration of AI fundamentals, neural networks, and industrial applications of machine learning at scale.</p>
-
+                    <div class="section-meta">05 VERIFIED RECORDS</div>
                 </div>
 
-                <!-- 2. J.P. MORGAN -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.1s;">
-                    <div class="cert-image clickable-cert">
-                        <img src="/assets/J.P.%20Morgan%20-%20Software%20Engineering%20Job%20Simulation.png" alt="J.P. Morgan Software Engineering" loading="lazy">
-                        <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
-                    </div>
-                    <div class="cert-header">
-                        <div class="cert-icon">🏦</div>
-                        <div class="cert-meta">
-                            <span class="cert-org">J.P. MORGAN</span>
-                            <span class="cert-date">ISSUED: 2024</span>
+                <div class="certs-grid">
+                    <!-- 1. HONEYWELL AI -->
+                    <div class="cert-card theodor-card reveal-up">
+                        <div class="cert-image clickable-cert" title="Click to view full certificate">
+                            <img src="/assets/Honeywell-artificial-intelligence_page-0001.jpg" alt="Honeywell Artificial Intelligence Certificate" loading="lazy">
+                            <div class="cert-zoom-hint">CLICK TO ENLARGE CERTIFICATE 🔍</div>
                         </div>
+                        <div class="cert-header">
+                            <div class="cert-icon">🤖</div>
+                            <div class="cert-meta">
+                                <span class="cert-org">HONEYWELL</span>
+                                <span class="cert-date">ISSUED: 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">ARTIFICIAL INTELLIGENCE</h3>
+                        <p class="cert-desc">Exploration of AI fundamentals, neural network architectures, and industrial applications of machine learning at enterprise scale.</p>
+                        <div class="cert-verify">VERIFIED CREDENTIAL ✓</div>
                     </div>
-                    <h3 class="cert-title">SOFTWARE ENGINEERING JOB SIMULATION</h3>
-                    <p class="cert-desc">Participated in the Forage J.P. Morgan Software Engineering virtual experience, focusing on financial systems and data visualization.</p>
 
+                    <!-- 2. J.P. MORGAN -->
+                    <div class="cert-card theodor-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="cert-image clickable-cert" title="Click to view full certificate">
+                            <img src="/assets/J.P.%20Morgan%20-%20Software%20Engineering%20Job%20Simulation.png" alt="J.P. Morgan Software Engineering" loading="lazy">
+                            <div class="cert-zoom-hint">CLICK TO ENLARGE CERTIFICATE 🔍</div>
+                        </div>
+                        <div class="cert-header">
+                            <div class="cert-icon">🏦</div>
+                            <div class="cert-meta">
+                                <span class="cert-org">J.P. MORGAN</span>
+                                <span class="cert-date">ISSUED: 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">SOFTWARE ENGINEERING SIMULATION</h3>
+                        <p class="cert-desc">Completed the Forage J.P. Morgan Software Engineering virtual experience, focusing on financial data visualization, trader interface tooling, and git systems.</p>
+                        <div class="cert-verify">VERIFIED CREDENTIAL ✓</div>
+                    </div>
+
+                    <!-- 3. DELOITTE DATA -->
+                    <div class="cert-card theodor-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="cert-image clickable-cert" title="Click to view full certificate">
+                            <img src="/assets/Deloitte%20Australia%20-%20Data%20Analytics%20Job%20Simulation.png" alt="Deloitte Data Analytics" loading="lazy">
+                            <div class="cert-zoom-hint">CLICK TO ENLARGE CERTIFICATE 🔍</div>
+                        </div>
+                        <div class="cert-header">
+                            <div class="cert-icon">📊</div>
+                            <div class="cert-meta">
+                                <span class="cert-org">DELOITTE AUSTRALIA</span>
+                                <span class="cert-date">ISSUED: 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">DATA ANALYTICS JOB SIMULATION</h3>
+                        <p class="cert-desc">Gained practical experience in corporate data analytics, telemetry visualization, client hypothesis testing, and executive reporting.</p>
+                        <div class="cert-verify">VERIFIED CREDENTIAL ✓</div>
+                    </div>
+
+                    <!-- 4. DBMS & MS FABRIC -->
+                    <div class="cert-card theodor-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="cert-image clickable-cert" title="Click to view full certificate">
+                            <img src="/assets/Database%20Management%20Systems%20(RDBMS)%20&%20Microsoft%20Fabric%20SQL.jpg" alt="DBMS & Microsoft Fabric SQL" loading="lazy">
+                            <div class="cert-zoom-hint">CLICK TO ENLARGE CERTIFICATE 🔍</div>
+                        </div>
+                        <div class="cert-header">
+                            <div class="cert-icon">🗄️</div>
+                            <div class="cert-meta">
+                                <span class="cert-org">GUVI / MICROSOFT</span>
+                                <span class="cert-date">ISSUED: 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">DBMS & MS FABRIC SQL</h3>
+                        <p class="cert-desc">Comprehensive study of relational database design, query optimization, normalization, indexing, and SQL warehousing in Microsoft Fabric.</p>
+                        <div class="cert-verify">VERIFIED CREDENTIAL ✓</div>
+                    </div>
+
+                    <!-- 5. TCS ION -->
+                    <div class="cert-card theodor-card reveal-up" style="transition-delay: 0.4s;">
+                        <div class="cert-image clickable-cert" title="Click to view full certificate">
+                            <img src="/assets/TCS%20ION%20Career%20Edge%20-%20Young%20Professional.jpg" alt="TCS ION Career Edge" loading="lazy">
+                            <div class="cert-zoom-hint">CLICK TO ENLARGE CERTIFICATE 🔍</div>
+                        </div>
+                        <div class="cert-header">
+                            <div class="cert-icon">🌟</div>
+                            <div class="cert-meta">
+                                <span class="cert-org">TCS ION</span>
+                                <span class="cert-date">ISSUED: 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">CAREER EDGE - YOUNG PROFESSIONAL</h3>
+                        <p class="cert-desc">Mastered corporate communications, modern business problem solving, professional ethics, and organizational collaboration standards.</p>
+                        <div class="cert-verify">VERIFIED CREDENTIAL ✓</div>
+                    </div>
                 </div>
-
-                <!-- 3. DELOITTE DATA -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.2s;">
-                    <div class="cert-image clickable-cert">
-                        <img src="/assets/Deloitte%20Australia%20-%20Data%20Analytics%20Job%20Simulation.png" alt="Deloitte Data Analytics" loading="lazy">
-                        <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
-                    </div>
-                    <div class="cert-header">
-                        <div class="cert-icon">📊</div>
-                        <div class="cert-meta">
-                            <span class="cert-org">DELOITTE AUSTRALIA</span>
-                            <span class="cert-date">ISSUED: 2024</span>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">DATA ANALYTICS JOB SIMULATION</h3>
-                    <p class="cert-desc">Gained practical experience in data analysis, visualization, and strategic insights for real-world client scenarios.</p>
-
-                </div>
-
-                <!-- 4. DBMS & MS FABRIC -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.3s;">
-                    <div class="cert-image clickable-cert">
-                        <img src="/assets/Database%20Management%20Systems%20(RDBMS)%20&%20Microsoft%20Fabric%20SQL.jpg" alt="DBMS & Microsoft Fabric SQL" loading="lazy">
-                        <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
-                    </div>
-                    <div class="cert-header">
-                        <div class="cert-icon">🗄️</div>
-                        <div class="cert-meta">
-                            <span class="cert-org">GUVI / MICROSOFT</span>
-                            <span class="cert-date">ISSUED: 2024</span>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">DBMS & MS FABRIC SQL</h3>
-                    <p class="cert-desc">In-depth study of Relational Database Management Systems and SQL implementation within Microsoft Fabric ecosystem.</p>
-
-                </div>
-
-                <!-- 5. TCS ION -->
-                <div class="cert-card reveal-up" style="transition-delay: 0.4s;">
-                    <div class="cert-image clickable-cert">
-                        <img src="/assets/TCS%20ION%20Career%20Edge%20-%20Young%20Professional.jpg" alt="TCS ION Career Edge" loading="lazy">
-                        <div class="cert-zoom-hint">VIEW FULL CERTIFICATE</div>
-                    </div>
-                    <div class="cert-header">
-                        <div class="cert-icon">🌟</div>
-                        <div class="cert-meta">
-                            <span class="cert-org">TCS ION</span>
-                            <span class="cert-date">ISSUED: 2024</span>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">CAREER EDGE - YOUNG PROFESSIONAL</h3>
-                    <p class="cert-desc">Developed essential soft skills, business communication, and professional ethics for corporate readiness.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SELECTED WORKS -->
-        <section id="works">
-            <div class="section-header reveal">
-                <div>
-                    <div class="section-label">Case Studies</div>
-                    <h2 class="section-title">Selected Works</h2>
-                    <p class="section-tagline">Selected projects demonstrating real-world problem solving using AI and
-                        scalable systems.</p>
-                </div>
-                <div class="section-meta">/ 05 PROJECTS TOTAL</div>
-            </div>
-
-            <!-- PROJECT CATEGORY FILTERS -->
-            <div class="project-filters reveal">
-                <button type="button" class="filter-btn active" data-filter="all">ALL WORKS (5)</button>
-                <button type="button" class="filter-btn" data-filter="cybersecurity">CYBERSECURITY (2)</button>
-                <button type="button" class="filter-btn" data-filter="ai-ml">AI & MACHINE LEARNING (4)</button>
-                <button type="button" class="filter-btn" data-filter="fintech">QUANT / FINTECH (1)</button>
-                <button type="button" class="filter-btn" data-filter="fullstack">FULL-STACK (2)</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card expanded reveal-up" data-category="cybersecurity ai-ml">
-                    <div class="project-thumb">
-                        <img src="/assets/project1.png" alt="Intrusion Detection System" loading="lazy">
-                        <div class="project-overlay">
-                            <span class="overlay-title">VIEW PROJECT</span>
-                            <div class="overlay-actions">
-                                <a href="https://github.com/PUJARIJAYASAI/CNN-LSTM-Intrusion-Detector" target="_blank"
-                                    class="overlay-btn">GITHUB</a>
-                            </div>
-                        </div>
-                        <div class="featured-tag">⭐ FEATURED</div>
-                    </div>
-                    <span class="project-cat">Cybersecurity / AI · Deep Learning</span>
-                    <h3 class="project-title">
-                        HYBRID ML-RL INTRUSION DETECTOR
-                        <span class="arrow-move">→</span>
-                    </h3>
-                    <p class="project-desc">A production-grade IDS combining CNN-LSTM deep learning with Reinforcement Learning for dynamic anomaly thresholding and real-time network defense.</p>
-
-                    <div class="project-info-grid">
-                        <div class="info-block">
-                            <div class="log-label">🔧 ENGINEERING HIGHLIGHTS</div>
-                            <ul class="contribution-list">
-                                <li>Real-time extraction of 78 bidirectional flow features (CIC-IDS2017)</li>
-                                <li>Q-Learning RL Agent for dynamic threshold adjustment based on noise</li>
-                                <li>O(1) Rate Detectors for SYN Floods and Port Scans (CPU Optimized)</li>
-                            </ul>
-                        </div>
-                        <div class="info-block">
-                            <div class="log-label">📊 PERFORMANCE LOGS</div>
-                            <div class="metric-badges">
-                                <span class="metric-badge">98.5% ACCURACY</span>
-                                <span class="metric-badge">500K+ RECORDS</span>
-                                <span class="metric-badge">REAL-TIME TSHARK</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-categorized">
-                        <div class="stack-group">
-                            <span class="stack-label">Deep Learning:</span> <span class="stack-val">CNN-LSTM · PyTorch</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Detection:</span> <span class="stack-val">Reinforcement Learning · TShark</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Features:</span> <span class="stack-val">CIC-IDS2017 · 78 Features</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card reveal-up" data-category="fullstack" style="transition-delay: 0.1s;">
-                    <div class="project-thumb">
-                        <img src="/assets/project2.jpg" alt="Cop Connect Project" loading="lazy">
-                        <div class="project-overlay">
-                            <span class="overlay-title">VIEW PROJECT</span>
-                            <div class="overlay-actions">
-                                <a href="https://github.com/PUJARIJAYASAI/cop-connect1" target="_blank"
-                                    class="overlay-btn">GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="project-cat">Web / AI</span>
-                    <h3 class="project-title">
-                        COP CONNECT
-                        <span class="arrow-move">→</span>
-                    </h3>
-                    <p class="project-desc">Developed a scalable AI-powered web platform for real-time communication and
-                        support.</p>
-
-                    <div class="project-info-grid">
-                        <div class="info-block">
-                            <div class="log-label">🔧 KEY CONTRIBUTIONS</div>
-                            <ul class="contribution-list">
-                                <li>Designed backend architecture using Flask</li>
-                                <li>Integrated Firebase for real-time data handling</li>
-                                <li>Built modular system for scalability and maintainability</li>
-                            </ul>
-                        </div>
-                        <div class="info-block">
-                            <div class="log-label">📊 HIGHLIGHTS</div>
-                            <div class="metric-badges">
-                                <span class="metric-badge">REAL-TIME SYNC</span>
-                                <span class="metric-badge">SCALABLE DESIGN</span>
-                                <span class="metric-badge">AI INTEGRATED</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span class="tech-pill">Python</span>
-                        <span class="tech-pill">Flask</span>
-                        <span class="tech-pill">Firebase</span>
-                    </div>
-                </article>
-                <!-- Project 3 -->
-                <article class="project-card reveal-up" data-category="ai-ml fullstack" style="transition-delay: 0.2s;">
-                    <div class="project-thumb">
-                        <img src="/assets/project3.png" alt="AI Health Intake System" loading="lazy">
-                        <div class="project-overlay">
-                            <span class="overlay-title">VIEW PROJECT</span>
-                            <div class="overlay-actions">
-                                <a href="https://github.com/prathamkhairmode15/Spring_Health_App" target="_blank"
-                                    class="overlay-btn">GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="project-cat">AI / Healthcare · Scalable Systems</span>
-                    <h3 class="project-title">
-                        AI HEALTH INTAKE SYSTEM
-                        <span class="arrow-move">→</span>
-                    </h3>
-                    <p class="project-desc">Built an AI-powered health intake system that analyzes user symptoms and
-                        generates real-time condition insights, deployed as a scalable backend service.</p>
-
-                    <div class="project-info-grid">
-                        <div class="info-block">
-                            <div class="log-label">🧠 KEY FEATURES</div>
-                            <ul class="contribution-list">
-                                <li>Interactive intake form with 8+ symptom inputs</li>
-                                <li>Predicts 7+ health conditions using AI inference</li>
-                                <li>Real-time response with visual insights (charts)</li>
-                            </ul>
-                        </div>
-                        <div class="info-block">
-                            <div class="log-label">🔥 ENGINEERING HIGHLIGHTS</div>
-                            <ul class="contribution-list highlight-list">
-                                <li>Spring Boot backend for robust API handling</li>
-                                <li>Docker containerization & K8s orchestration</li>
-                                <li>Integrated AI API for real-time inference</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-info-grid no-border">
-                        <div class="info-block">
-                            <div class="log-label">📊 HIGHLIGHTS</div>
-                            <div class="metric-badges horizontal">
-                                <span class="metric-badge">REAL-TIME AI</span>
-                                <span class="metric-badge">K8S SCALABLE</span>
-                                <span class="metric-badge">DATA VISUALS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-categorized">
-                        <div class="stack-group">
-                            <span class="stack-label">Frontend:</span> <span class="stack-val">React</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Backend:</span> <span class="stack-val">Spring Boot</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">AI:</span> <span class="stack-val">OpenAI API</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">DevOps:</span> <span class="stack-val">Docker · Kubernetes</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4: AI Trading Terminal -->
-                <article class="project-card reveal-up" data-category="ai-ml fintech" style="transition-delay: 0.1s;">
-                    <div class="project-thumb">
-                        <img src="/assets/trading-terminal.png" alt="Indian Stock Market AI Trading Terminal" loading="lazy">
-                        <div class="project-overlay">
-                            <span class="overlay-title">VIEW PROJECT</span>
-                            <div class="overlay-actions">
-                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
-                                    class="overlay-btn">GITHUB</a>
-                            </div>
-                        </div>
-                        <div class="featured-tag">📈 QUANT / FINTECH</div>
-                    </div>
-                    <span class="project-cat">Algorithmic Trading / AI · Quantitative Systems</span>
-                    <h3 class="project-title">
-                        AI STOCK TRADING TERMINAL & REGIME ENGINE
-                        <span class="arrow-move">→</span>
-                    </h3>
-                    <p class="project-desc">A production-grade algorithmic trading terminal and institutional swing screener for Indian equities (NSE/BSE), integrating live Kotak Neo market feeds with multi-model AI for regime classification and probability-ranked trade setups.</p>
-
-                    <div class="project-info-grid">
-                        <div class="info-block">
-                            <div class="log-label">🔧 ENGINEERING HIGHLIGHTS</div>
-                            <ul class="contribution-list">
-                                <li>6-State GMM / HMM Market Regime Classifier (BULL_ROTATION, BEAR, VOLATILITY)</li>
-                                <li>7-Factor Composite Screener with Tri-Model AI Ensemble scoring 2R target win probability</li>
-                                <li>9 Rule-Based Strategies (20 EMA Pullbacks, Anchored VWAP, Minervini SEPA, VCP)</li>
-                                <li>Live market breadth barometer tracking 760+ NSE stocks in real time</li>
-                            </ul>
-                        </div>
-                        <div class="info-block">
-                            <div class="log-label">📊 PERFORMANCE LOGS</div>
-                            <div class="metric-badges">
-                                <span class="metric-badge">KOTAK NEO LIVE REST</span>
-                                <span class="metric-badge">760+ STOCKS MONITORED</span>
-                                <span class="metric-badge">6-STATE REGIME ENGINE</span>
-                                <span class="metric-badge">TRI-MODEL AI ENSEMBLE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-categorized">
-                        <div class="stack-group">
-                            <span class="stack-label">Core & API:</span> <span class="stack-val">Python · FastAPI · Kotak Neo REST & WebSockets</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">AI / ML:</span> <span class="stack-val">Gaussian Mixture (GMM) · HMM · XGBoost · Optuna</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Data & Indicators:</span> <span class="stack-val">Pandas · NumPy · TA Engine (EMA, ATR, VWAP)</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Frontend:</span> <span class="stack-val">Responsive UI · TradingView Charting Integration</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 5: AutoRed APT -->
-                <article class="project-card reveal-up" data-category="cybersecurity ai-ml" style="transition-delay: 0.2s;">
-                    <div class="project-thumb">
-                        <img src="/assets/autored-apt.png" alt="AutoRed APT Penetration Testing Tool" loading="lazy">
-                        <div class="project-overlay">
-                            <span class="overlay-title">VIEW PROJECT</span>
-                            <div class="overlay-actions">
-                                <a href="https://autored-apt.vercel.app/" target="_blank"
-                                    class="overlay-btn">LIVE DEMO</a>
-                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
-                                    class="overlay-btn">GITHUB</a>
-                            </div>
-                        </div>
-                        <div class="featured-tag">📜 IEEE RESEARCH PAPER</div>
-                    </div>
-                    <span class="project-cat">Cybersecurity / AI · LLM + RAG Platform</span>
-                    <h3 class="project-title">
-                        AUTORED APT : AUTONOMOUS PENETRATION TESTING PLATFORM
-                        <span class="arrow-move">→</span>
-                    </h3>
-                    <p class="project-desc">A unified web application penetration testing platform that automates reconnaissance, network scanning, CVE discovery, and AI-driven vulnerability interpretation via RAG and MITRE CVE knowledge bases. Co-authored IEEE-style research publication.</p>
-
-                    <div class="project-info-grid">
-                        <div class="info-block">
-                            <div class="log-label">🔬 RESEARCH & ARCHITECTURE</div>
-                            <ul class="contribution-list">
-                                <li>LLM + Retrieval-Augmented Generation (RAG) querying MITRE CVE API in real time</li>
-                                <li>End-to-end automated pipeline: WHOIS/DNS OSINT, Nmap port scanning, NSE Vulners</li>
-                                <li>Evaluated on 5 authorized live targets, discovering 560 vulnerabilities with 94.29% precision</li>
-                                <li>Automated executive PDF security report synthesis in under 90 seconds</li>
-                            </ul>
-                        </div>
-                        <div class="info-block">
-                            <div class="log-label">📊 EMPIRICAL METRICS</div>
-                            <div class="metric-badges">
-                                <span class="metric-badge">94.29% PRECISION</span>
-                                <span class="metric-badge">95.65% DETECTION RATE</span>
-                                <span class="metric-badge">528 / 560 CVES FOUND</span>
-                                <span class="metric-badge">12.5 MIN TOTAL CYCLE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-categorized">
-                        <div class="stack-group">
-                            <span class="stack-label">Frontend:</span> <span class="stack-val">React.js · Live Security Dashboard</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Backend:</span> <span class="stack-val">Python · Flask REST API · Firebase Auth</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">AI & RAG:</span> <span class="stack-val">Gemini AI / OpenRouter · MITRE CVE Knowledge API</span>
-                        </div>
-                        <div class="stack-group">
-                            <span class="stack-label">Security Tools:</span> <span class="stack-val">Nmap · NSE Vulners · WHOIS · theHarvester</span>
-                        </div>
-                    </div>
-                </article>
             </div>
         </section>
 
-        <!-- STRUCTURAL INTEGRITY CTA -->
-        <section class="cta-section">
-            <div class="cta-grid reveal">
-                <div class="cta-text">
-                    <h2>EXPLORE MY <br>WORK & <br><span class="accent-text">CODE.</span></h2>
-                    <p>Dive into my projects, code, and technical implementations. I focus on building scalable systems
-                        and real-world solutions using AI and backend engineering.</p>
+        <!-- 05 / CONTACT & CTA SECTION -->
+        <section id="contact" class="cta-section">
+            <div class="section-container">
+                <div class="section-badge-header reveal">
+                    <span class="section-idx">05</span>
+                    <span class="section-divider">/</span>
+                    <span class="section-idx-title">LET'S CONNECT</span>
                 </div>
-                <div class="cta-actions">
-                    <a href="/assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf"
-                        class="btn btn-filled resume-btn btn-glow">DOWNLOAD RESUME</a>
-                    <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline source-btn">VIEW GITHUB</a>
-                    <div class="cta-socials">
-                        <a href="https://linkedin.com/in/pujarijayasai" target="_blank"
-                            rel="noopener noreferrer">LINKEDIN</a>
-                        <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">GITHUB</a>
+
+                <div class="theodor-cta-box reveal">
+                    <div class="cta-top-meta">
+                        <span class="cta-pulse-dot"></span>
+                        <span class="cta-meta-text">OPEN FOR HIGH-IMPACT OPPORTUNITIES & COLLABORATIONS</span>
                     </div>
-                    <div class="cta-contact-info">
-                        <button type="button" class="copy-trigger" data-copy="pujarijayasai@gmail.com" title="Click to copy email">
-                            <span>📧 pujarijayasai@gmail.com</span>
-                            <span class="copy-badge">COPY</span>
+
+                    <h2 class="cta-headline">
+                        Let's build something <span class="accent-gradient">remarkable</span> together.
+                    </h2>
+                    <p class="cta-subtext">
+                        Whether you are building an intelligent AI platform, need scalable backend systems, or have a mission-critical engineering role — I'd love to connect.
+                    </p>
+
+                    <!-- Fast Contact Action Pills with One-Click Copy -->
+                    <div class="cta-copy-pills">
+                        <button type="button" class="copy-trigger theodor-pill-btn" data-copy="pujarijayasai@gmail.com" title="Click to copy email address">
+                            <span class="pill-icon">✉️</span>
+                            <span class="pill-label">pujarijayasai@gmail.com</span>
+                            <span class="pill-copy-tag">COPY</span>
                         </button>
-                        <button type="button" class="copy-trigger" data-copy="+919381453961" title="Click to copy phone">
-                            <span>📱 +91 9381453961</span>
-                            <span class="copy-badge">COPY</span>
+                        <button type="button" class="copy-trigger theodor-pill-btn" data-copy="+919381453961" title="Click to copy phone number">
+                            <span class="pill-icon">📱</span>
+                            <span class="pill-label">+91 9381453961</span>
+                            <span class="pill-copy-tag">COPY</span>
                         </button>
+                    </div>
+
+                    <!-- Direct Navigation Links -->
+                    <div class="cta-link-row">
+                        <a href="/assets/resume.pdf" download="Jayasai_Pujari_Resume.pdf" class="btn btn-pill-primary">
+                            Download Resume (PDF) ↓
+                        </a>
+                        <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer" class="btn btn-pill-secondary">
+                            GitHub Profile ↗
+                        </a>
+                        <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer" class="btn btn-pill-secondary">
+                            LinkedIn Profile ↗
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-brand">
-            JAYASAI PUJARI
-            <p class="footer-tagline">Built with focus on performance, simplicity, and real-world impact.</p>
+    <!-- FOOTER (THEODOR STYLE) -->
+    <footer class="theodor-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-brand-title">JAYASAI PUJARI</div>
+                <p class="footer-brand-desc">Software Engineer & AI/ML Developer · Andhra Pradesh, India</p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#hero">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#works">WORKS</a>
+                <a href="#skills">DISCIPLINES</a>
+                <a href="#certs">CREDENTIALS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-status-pill">
+                    <span class="footer-green-dot"></span>
+                    <span>ALL SYSTEMS OPERATIONAL · UTC+5:30</span>
+                </div>
+                <div class="footer-copyright">
+                    © 2026 JAYASAI PUJARI. CRAFTED WITH PERFORMANCE & PRECISION.
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <a href="https://github.com/PUJARIJAYASAI" target="_blank" rel="noopener noreferrer">GITHUB</a>
-            <a href="https://linkedin.com/in/pujarijayasai" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-        </div>
-        <div class="footer-contact">
-            <button type="button" class="copy-trigger footer-copy-btn" data-copy="pujarijayasai@gmail.com" title="Click to copy email">
-                <span>pujarijayasai@gmail.com</span>
-                <span class="copy-badge-inline">COPY</span>
-            </button>
-            <button type="button" class="copy-trigger footer-copy-btn" data-copy="+919381453961" title="Click to copy phone">
-                <span>+91 9381453961</span>
-                <span class="copy-badge-inline">COPY</span>
-            </button>
-        </div>
-        <div class="footer-copy">© 2026 JAYASAI PUJARI. ALL SYSTEM LOGS RESERVED.</div>
     </footer>
 
     <!-- CYBER HUD TOAST NOTIFICATION -->
     <div id="cyber-toast" class="cyber-toast" aria-live="polite"></div>
 
-    <!-- LIGHTBOX OVERLAY -->
+    <!-- CERTIFICATE LIGHTBOX MODAL -->
     <div id="cert-lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged Certificate View">
         <div id="lightbox-caption"></div>
     </div>
 

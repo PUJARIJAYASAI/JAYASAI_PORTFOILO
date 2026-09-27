@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. TYPING EFFECT
     const typingText = document.getElementById('typing-text');
-    const phrases = ["AI/ML Developer", "Full-Stack Engineer", "Problem Solver"];
+    const phrases = ["AI/ML Developer", "Full-Stack Engineer", "Quantitative Systems", "Intelligent Systems"];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
