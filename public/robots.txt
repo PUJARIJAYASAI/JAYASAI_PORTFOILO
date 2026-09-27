@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pujarijayasai.github.io/sitemap.xml
+Sitemap: https://jayasai-portfoilo.vercel.app/sitemap.xml

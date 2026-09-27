@@ -71,15 +71,15 @@ Open your browser at `http://localhost:5173` and you're live.
 ## 🧠 Project Showcases
 
 ### 🔐 Intrusion Detection System (IDS)
-![IDS Preview](assets/project1.png)
+![IDS Preview](public/assets/project1.png)
 An AI-powered network security system for real-time threat classification using supervised ML models. Built to handle high-throughput packet analysis with minimal false positives.
 
 ### 🚔 Cop Connect
-![Cop Connect Preview](assets/project2.png)
+![Cop Connect Preview](public/assets/project2.jpg)
 A full-stack civic-tech platform bridging citizens and law enforcement — featuring incident reporting, real-time updates, and a geospatial case dashboard.
 
 ### 🏥 Health Intake System
-![Health Intake Preview](assets/project3.png)
+![Health Intake Preview](public/assets/project3.png)
 An intelligent patient intake pipeline leveraging NLP to extract structured health data from unstructured form submissions, reducing manual processing overhead.
 
 ---

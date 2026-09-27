@@ -1,6 +1,3 @@
-/* CUSTOM FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;700&family=Baskervville:ital@0;1&display=swap');
-
 :root {
     --bg-color: #0a0a0a;
     --card-bg: #111111;
@@ -1099,134 +1096,10 @@ blockquote {
     cursor: pointer;
 }
 
-/* HORIZONTAL SCROLL CONTAINERS */
-.skills-stack-grid,
-.certs-grid,
-.projects-grid {
-    display: flex !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 2rem !important;
-    padding: 2rem 0 !important;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent-color) transparent;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* Custom Scrollbar for Chrome/Safari */
-.skills-stack-grid::-webkit-scrollbar,
-.certs-grid::-webkit-scrollbar,
-.projects-grid::-webkit-scrollbar {
-    height: 4px;
-}
-
-.skills-stack-grid::-webkit-scrollbar-track,
-.certs-grid::-webkit-scrollbar-track,
-.projects-grid::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.skills-stack-grid::-webkit-scrollbar-thumb,
-.certs-grid::-webkit-scrollbar-thumb,
-.projects-grid::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
-    box-shadow: 0 0 10px var(--accent-glow);
-}
-
-/* ULTRA COMPACT DENSITY */
-body {
-    font-size: 0.8rem;
-    /* Reduced from 0.9rem */
-}
-
-.about-section,
-.skills-stack-section,
-.certs-section,
+/* SELECTED WORKS / PROJECTS SECTION */
 #works {
-    padding: 2rem var(--container-padding) !important;
-}
-
-.section-header {
-    margin-bottom: 2rem;
-}
-
-.section-title {
-    font-size: 2rem !important;
-    /* Reduced from 3rem */
-}
-
-/* Item Adjustments for Horizontal Flow */
-.skills-stack-grid,
-.certs-grid,
-.projects-grid {
-    gap: 1rem !important;
-    /* Tighter gap */
-    padding: 1rem 0 !important;
-}
-
-.skills-col,
-.cert-card,
-.project-card {
-    min-width: 220px;
-    /* Further reduced from 280px */
-    padding: 1rem !important;
-    margin-bottom: 0.5rem;
-}
-
-.skill-name,
-.cert-title,
-.project-title {
-    font-size: 1rem !important;
-    /* Consistent small titles */
-    letter-spacing: 1px;
-}
-
-.skill-context,
-.cert-desc,
-.project-desc {
-    font-size: 0.7rem !important;
-    /* Smaller description text */
-    line-height: 1.4;
-}
-
-.cert-image {
-    height: 110px !important;
-    /* Even smaller */
-}
-
-.project-thumb {
-    height: 150px !important;
-    /* Even smaller */
-}
-
-.metric-badge {
-    font-size: 0.55rem;
-    padding: 4px 8px;
-}
-
-.tech-pill {
-    font-size: 0.6rem;
-    padding: 3px 8px;
-}
-
-@media (max-width: 768px) {
-
-    .skills-col,
-    .cert-card,
-    .project-card {
-        min-width: 200px;
-    }
-}
-
-/* Reset specific background/padding that might break flow */
-.skills-col {
-    background: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.skills-stack-grid {
-    background: transparent !important;
+    padding: 8rem var(--container-padding);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .section-header {
@@ -1714,6 +1587,41 @@ footer {
         display: flex !important;
         flex-direction: row !important;
         overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 1.25rem !important;
+        padding-bottom: 1.5rem !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) transparent;
+    }
+
+    .skills-stack-grid::-webkit-scrollbar,
+    .certs-grid::-webkit-scrollbar,
+    .projects-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .skills-stack-grid::-webkit-scrollbar-thumb,
+    .certs-grid::-webkit-scrollbar-thumb,
+    .projects-grid::-webkit-scrollbar-thumb {
+        background: var(--accent-color);
+        box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .skills-col,
+    .cert-card,
+    .project-card {
+        min-width: 280px;
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+
+    .about-section,
+    .skills-stack-section,
+    .certs-section,
+    #works,
+    .cta-section {
+        padding: 4rem var(--container-padding) !important;
     }
 
     footer {
@@ -1808,7 +1716,7 @@ footer {
 
 .project-card.expanded .tech-stack-categorized,
 .project-card.expanded .tech-stack {
-    max-height: 200px;
+    max-height: 350px;
     opacity: 1;
     margin-top: 0.5rem;
     padding-top: 1rem;
