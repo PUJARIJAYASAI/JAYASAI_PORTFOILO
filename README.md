@@ -82,6 +82,14 @@ A full-stack civic-tech platform bridging citizens and law enforcement — featu
 ![Health Intake Preview](public/assets/project3.png)
 An intelligent patient intake pipeline leveraging NLP to extract structured health data from unstructured form submissions, reducing manual processing overhead.
 
+### 📈 AI Stock Trading Terminal & Regime Engine
+![Trading Terminal Preview](public/assets/trading-terminal.png)
+A high-throughput algorithmic trading terminal and institutional swing screener for Indian equities (NSE/BSE), integrating live Kotak Neo REST & WebSocket market feeds with multi-model AI (6-State GMM & XGBoost 2R target probability scoring).
+
+### 🛡️ AutoRed APT : Autonomous Penetration Testing Platform
+![AutoRed APT Preview](public/assets/autored-apt.png)
+An automated web penetration testing platform combining passive OSINT, active Nmap/NSE Vulners scanning, and CVE-enriched AI analysis using LLM + Retrieval-Augmented Generation (RAG). Co-authored IEEE-style research publication. Live demo: [autored-apt.vercel.app](https://autored-apt.vercel.app/).
+
 ---
 
 ## 📬 Contact

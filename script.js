@@ -246,11 +246,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 '• <span class="accent-text">resume</span> - View or download PDF resume<br>' +
                 '• <span class="accent-text">clear</span> - Clear terminal output';
         } else if (cleanCmd === 'projects') {
-            response = 'Featured Projects:<br>' +
+            response = 'Featured Engineering Projects (5):<br>' +
                 '1. <a href="#works">Hybrid ML-RL Intrusion Detector</a> (CNN-LSTM + Q-Learning, 98.5% acc)<br>' +
-                '2. <a href="#works">Cop Connect</a> (Flask + Firebase civic platform)<br>' +
-                '3. <a href="#works">AI Health Intake System</a> (Spring Boot + OpenAI API + K8s)<br>' +
-                '<span class="accent-text">Tip: Scroll down to #works to see full case studies.</span>';
+                '2. <a href="#works">AutoRed APT</a> (AI Penetration Testing Tool, 94.3% precision, IEEE Paper)<br>' +
+                '3. <a href="#works">AI Stock Trading Terminal</a> (Kotak Neo Live REST/WS, 6-State GMM Regime)<br>' +
+                '4. <a href="#works">Cop Connect</a> (Flask + Firebase civic platform)<br>' +
+                '5. <a href="#works">AI Health Intake System</a> (Spring Boot + OpenAI API + K8s)<br>' +
+                '<span class="accent-text">Tip: Scroll down to #works to filter by category or tap to expand.</span>';
         } else if (cleanCmd === 'stack') {
             response = 'Technical Stack:<br>' +
                 '• Languages: Python, Java, SQL, JavaScript<br>' +
@@ -310,8 +312,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const filter = btn.getAttribute('data-filter');
             projectCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
+                const categories = (card.getAttribute('data-category') || '').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
                     card.classList.remove('filter-hidden');
                 } else {
                     card.classList.add('filter-hidden');

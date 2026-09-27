@@ -459,19 +459,21 @@
                     <p class="section-tagline">Selected projects demonstrating real-world problem solving using AI and
                         scalable systems.</p>
                 </div>
-                <div class="section-meta">/ 03 PROJECTS TOTAL</div>
+                <div class="section-meta">/ 05 PROJECTS TOTAL</div>
             </div>
 
             <!-- PROJECT CATEGORY FILTERS -->
             <div class="project-filters reveal">
-                <button type="button" class="filter-btn active" data-filter="all">ALL WORKS (3)</button>
-                <button type="button" class="filter-btn" data-filter="ai-ml">AI & MACHINE LEARNING (2)</button>
-                <button type="button" class="filter-btn" data-filter="fullstack">FULL-STACK & BACKEND (1)</button>
+                <button type="button" class="filter-btn active" data-filter="all">ALL WORKS (5)</button>
+                <button type="button" class="filter-btn" data-filter="cybersecurity">CYBERSECURITY (2)</button>
+                <button type="button" class="filter-btn" data-filter="ai-ml">AI & MACHINE LEARNING (4)</button>
+                <button type="button" class="filter-btn" data-filter="fintech">QUANT / FINTECH (1)</button>
+                <button type="button" class="filter-btn" data-filter="fullstack">FULL-STACK (2)</button>
             </div>
 
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <article class="project-card expanded reveal-up" data-category="ai-ml">
+                <article class="project-card expanded reveal-up" data-category="cybersecurity ai-ml">
                     <div class="project-thumb">
                         <img src="/assets/project1.png" alt="Intrusion Detection System" loading="lazy">
                         <div class="project-overlay">
@@ -568,7 +570,7 @@
                     </div>
                 </article>
                 <!-- Project 3 -->
-                <article class="project-card reveal-up" data-category="ai-ml" style="transition-delay: 0.2s;">
+                <article class="project-card reveal-up" data-category="ai-ml fullstack" style="transition-delay: 0.2s;">
                     <div class="project-thumb">
                         <img src="/assets/project3.png" alt="AI Health Intake System" loading="lazy">
                         <div class="project-overlay">
@@ -629,6 +631,122 @@
                         </div>
                         <div class="stack-group">
                             <span class="stack-label">DevOps:</span> <span class="stack-val">Docker · Kubernetes</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: AI Trading Terminal -->
+                <article class="project-card reveal-up" data-category="ai-ml fintech" style="transition-delay: 0.1s;">
+                    <div class="project-thumb">
+                        <img src="/assets/trading-terminal.png" alt="Indian Stock Market AI Trading Terminal" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="overlay-title">VIEW PROJECT</span>
+                            <div class="overlay-actions">
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
+                                    class="overlay-btn">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="featured-tag">📈 QUANT / FINTECH</div>
+                    </div>
+                    <span class="project-cat">Algorithmic Trading / AI · Quantitative Systems</span>
+                    <h3 class="project-title">
+                        AI STOCK TRADING TERMINAL & REGIME ENGINE
+                        <span class="arrow-move">→</span>
+                    </h3>
+                    <p class="project-desc">A production-grade algorithmic trading terminal and institutional swing screener for Indian equities (NSE/BSE), integrating live Kotak Neo market feeds with multi-model AI for regime classification and probability-ranked trade setups.</p>
+
+                    <div class="project-info-grid">
+                        <div class="info-block">
+                            <div class="log-label">🔧 ENGINEERING HIGHLIGHTS</div>
+                            <ul class="contribution-list">
+                                <li>6-State GMM / HMM Market Regime Classifier (BULL_ROTATION, BEAR, VOLATILITY)</li>
+                                <li>7-Factor Composite Screener with Tri-Model AI Ensemble scoring 2R target win probability</li>
+                                <li>9 Rule-Based Strategies (20 EMA Pullbacks, Anchored VWAP, Minervini SEPA, VCP)</li>
+                                <li>Live market breadth barometer tracking 760+ NSE stocks in real time</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <div class="log-label">📊 PERFORMANCE LOGS</div>
+                            <div class="metric-badges">
+                                <span class="metric-badge">KOTAK NEO LIVE REST</span>
+                                <span class="metric-badge">760+ STOCKS MONITORED</span>
+                                <span class="metric-badge">6-STATE REGIME ENGINE</span>
+                                <span class="metric-badge">TRI-MODEL AI ENSEMBLE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-categorized">
+                        <div class="stack-group">
+                            <span class="stack-label">Core & API:</span> <span class="stack-val">Python · FastAPI · Kotak Neo REST & WebSockets</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">AI / ML:</span> <span class="stack-val">Gaussian Mixture (GMM) · HMM · XGBoost · Optuna</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">Data & Indicators:</span> <span class="stack-val">Pandas · NumPy · TA Engine (EMA, ATR, VWAP)</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">Frontend:</span> <span class="stack-val">Responsive UI · TradingView Charting Integration</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: AutoRed APT -->
+                <article class="project-card reveal-up" data-category="cybersecurity ai-ml" style="transition-delay: 0.2s;">
+                    <div class="project-thumb">
+                        <img src="/assets/autored-apt.png" alt="AutoRed APT Penetration Testing Tool" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="overlay-title">VIEW PROJECT</span>
+                            <div class="overlay-actions">
+                                <a href="https://autored-apt.vercel.app/" target="_blank"
+                                    class="overlay-btn">LIVE DEMO</a>
+                                <a href="https://github.com/PUJARIJAYASAI" target="_blank"
+                                    class="overlay-btn">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="featured-tag">📜 IEEE RESEARCH PAPER</div>
+                    </div>
+                    <span class="project-cat">Cybersecurity / AI · LLM + RAG Platform</span>
+                    <h3 class="project-title">
+                        AUTORED APT : AUTONOMOUS PENETRATION TESTING PLATFORM
+                        <span class="arrow-move">→</span>
+                    </h3>
+                    <p class="project-desc">A unified web application penetration testing platform that automates reconnaissance, network scanning, CVE discovery, and AI-driven vulnerability interpretation via RAG and MITRE CVE knowledge bases. Co-authored IEEE-style research publication.</p>
+
+                    <div class="project-info-grid">
+                        <div class="info-block">
+                            <div class="log-label">🔬 RESEARCH & ARCHITECTURE</div>
+                            <ul class="contribution-list">
+                                <li>LLM + Retrieval-Augmented Generation (RAG) querying MITRE CVE API in real time</li>
+                                <li>End-to-end automated pipeline: WHOIS/DNS OSINT, Nmap port scanning, NSE Vulners</li>
+                                <li>Evaluated on 5 authorized live targets, discovering 560 vulnerabilities with 94.29% precision</li>
+                                <li>Automated executive PDF security report synthesis in under 90 seconds</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <div class="log-label">📊 EMPIRICAL METRICS</div>
+                            <div class="metric-badges">
+                                <span class="metric-badge">94.29% PRECISION</span>
+                                <span class="metric-badge">95.65% DETECTION RATE</span>
+                                <span class="metric-badge">528 / 560 CVES FOUND</span>
+                                <span class="metric-badge">12.5 MIN TOTAL CYCLE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-categorized">
+                        <div class="stack-group">
+                            <span class="stack-label">Frontend:</span> <span class="stack-val">React.js · Live Security Dashboard</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">Backend:</span> <span class="stack-val">Python · Flask REST API · Firebase Auth</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">AI & RAG:</span> <span class="stack-val">Gemini AI / OpenRouter · MITRE CVE Knowledge API</span>
+                        </div>
+                        <div class="stack-group">
+                            <span class="stack-label">Security Tools:</span> <span class="stack-val">Nmap · NSE Vulners · WHOIS · theHarvester</span>
                         </div>
                     </div>
                 </article>
